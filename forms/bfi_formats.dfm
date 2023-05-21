@@ -1,6 +1,6 @@
 object BFI_Simvol_form: TBFI_Simvol_form
-  Left = 456
-  Top = 92
+  Left = 103
+  Top = 120
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = #1060#1086#1088#1084#1072#1090#1099' '#1041#1062#1042#1050' '#1040#1088#1075#1086#1085'-16'
@@ -35,8 +35,9 @@ object BFI_Simvol_form: TBFI_Simvol_form
     Top = 0
     Width = 502
     Height = 429
-    ActivePage = f_41
+    ActivePage = f_43
     Align = alClient
+    Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -44,7 +45,7 @@ object BFI_Simvol_form: TBFI_Simvol_form
     Font.Style = []
     ParentFont = False
     Style = tsButtons
-    TabIndex = 0
+    TabIndex = 2
     TabOrder = 0
     OnChange = formatsChange
     object f_41: TTabSheet
@@ -1499,7 +1500,7 @@ object BFI_Simvol_form: TBFI_Simvol_form
             Height = 14
             Caption = 'S'
           end
-          object Label89: TLabel
+          object f44_c: TLabel
             Left = 24
             Top = 128
             Width = 105
@@ -2316,7 +2317,7 @@ object BFI_Simvol_form: TBFI_Simvol_form
         end
       end
     end
-    object TabSheet1: TTabSheet
+    object f_test: TTabSheet
       Caption = #1058#1045#1057#1058
       ImageIndex = 6
       object Panel11: TPanel
@@ -2844,6 +2845,20 @@ object BFI_Simvol_form: TBFI_Simvol_form
           Font.Style = [fsBold]
           ParentFont = False
         end
+      end
+    end
+    object off: TTabSheet
+      Caption = #1053#1045#1058
+      ImageIndex = 7
+      object Panel12: TPanel
+        Left = 0
+        Top = 0
+        Width = 494
+        Height = 398
+        Align = alClient
+        Caption = 'Panel12'
+        Color = clBackground
+        TabOrder = 0
       end
     end
   end

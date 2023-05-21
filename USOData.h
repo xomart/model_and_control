@@ -86,6 +86,7 @@ static bool KSP_Booled[16][9];       // Массив выдачи команд с КСП (факт выдачи 
 */
 
 static char TableMask[2] = {'.','I'};        // Mask for USO Table Matrix    //
+static bool USO_PZS[16][8];
 
 /*
   Логика работы КСП с точки зрения УСО

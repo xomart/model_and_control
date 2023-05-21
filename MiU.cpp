@@ -28,7 +28,7 @@ USEFORM("forms\vived_frm.cpp", liftoff_form);
 USEFORM("iss\sm_ssvp_PX.cpp", sm_ssvp_plx_frm);
 USEFORM("argon\argon_debug_frm.cpp", arg_deb);
 USEFORM("forms\SOTR_frm.cpp", sotr);
-USEFORM("forms\AboutFrm.cpp", AboutForm);
+//USEFORM("forms\AboutFrm.cpp", AboutForm);
 USEFORM("forms\otkazy.cpp", otkazy_frm);
 USEFORM("forms\inpudebugf.cpp", NeptDebug);
 USEFORM("forms\sps_frm.cpp", sps_form);
@@ -54,7 +54,7 @@ WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
                  Application->CreateForm(__classid(Tclock_frm), &clock_frm);
                  Application->CreateForm(__classid(TBkuC), &BkuC);
                  Application->CreateForm(__classid(TIrBrForm), &IrBrForm);
-                 Application->CreateForm(__classid(TAboutForm), &AboutForm);
+                 //Application->CreateForm(__classid(TAboutForm), &AboutForm);
                  Application->CreateForm(__classid(TJouLogForm), &JouLogForm);
                  Application->CreateForm(__classid(Tksplfrm), &ksplfrm);
                  Application->CreateForm(__classid(TUsoForm), &UsoForm);

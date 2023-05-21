@@ -180,12 +180,15 @@ static unsigned short apdp; // argon pusk debug
 //\\\//\\\//\\\//\\\//\\\//\\\//\\\//\\\//\\\//\\\//\\\//\\\
 
 static AnsiString irvi_string = "              ";
+static AnsiString irvi_tstring = "              ";  //temp
 static AnsiString irvi_string_i[4];
 static bool irvi_err;
 
 static TDateTime gc1_time;  // Время первого Гибкого Цикла
 
 static double v_tek_m;      // Vтек при СКД получаем от КС-020
+
+static AnsiString inst_mem[3]; // Три последнии инструкции (00063)
 
 ////////////////
 // ПЕРЕМЕННЫЕ //

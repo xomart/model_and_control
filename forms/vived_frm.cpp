@@ -55,7 +55,6 @@ Series2->AddXY(270,158,clBlack);
 Series2->AddXY(280,165,clBlack);
 Series2->AddXY(290,170,clBlack);
 Series2->AddXY(300,176,clBlack);
-
 Series2->AddXY(310,182,clBlack);
 Series2->AddXY(320,187,clBlack);
 Series2->AddXY(330,191,clBlack);
@@ -83,10 +82,10 @@ Series2->AddXY(520,205,clBlack);
 
 void __fastcall Tliftoff_form::Button1Click(TObject *Sender)
 {
-Series1->GetVertAxis->CalcYPosValue(50);
-Series1->Clear();
-//Series1->AddXY(d,Series1->YValues ,clBlack);
-Label3->Caption=IntToStr(Series1->XValues);
+//Series1->GetVertAxis->CalcYPosValue(50);
+//Series2->Clear();
+Series1->AddXY(StrToFloat(xp->Text),StrToFloat(yp->Text),clBlack);
+//Label3->Caption=IntToStr(Series2->XValues);
 }
 //---------------------------------------------------------------------------
 

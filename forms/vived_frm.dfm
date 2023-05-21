@@ -1,6 +1,6 @@
 object liftoff_form: Tliftoff_form
-  Left = 19
-  Top = 165
+  Left = 341
+  Top = 243
   Width = 1003
   Height = 477
   Caption = #1042#1099#1074#1077#1076#1077#1085#1080#1077
@@ -19084,6 +19084,10 @@ object liftoff_form: Tliftoff_form
     BackImageInside = True
     BackWall.Brush.Color = clWhite
     BackWall.Brush.Style = bsClear
+    LeftWall.Brush.Color = clWhite
+    LeftWall.Brush.Style = bsClear
+    MarginLeft = 0
+    MarginTop = 5
     Title.Text.Strings = (
       'TChart')
     Title.Visible = False
@@ -19092,6 +19096,7 @@ object liftoff_form: Tliftoff_form
     LeftAxis.AutomaticMinimum = False
     LeftAxis.Maximum = 350
     LeftAxis.Minimum = 8
+    LeftAxis.MinorTickLength = 1
     View3D = False
     Align = alCustom
     TabOrder = 0
@@ -19099,6 +19104,7 @@ object liftoff_form: Tliftoff_form
       Marks.ArrowLength = 8
       Marks.Visible = False
       SeriesColor = clGreen
+      Title = #1054#1087#1086#1088#1085#1072#1103
       Pointer.InflateMargins = True
       Pointer.Pen.Width = 2
       Pointer.Style = psCross
@@ -19116,6 +19122,7 @@ object liftoff_form: Tliftoff_form
       Marks.ArrowLength = 8
       Marks.Visible = False
       SeriesColor = clRed
+      Title = #1060#1072#1082#1090#1080#1095#1077#1089#1082#1072#1103
       LinePen.Color = clRed
       LinePen.Width = 2
       XValues.DateTime = False
@@ -19128,7 +19135,7 @@ object liftoff_form: Tliftoff_form
       YValues.Order = loNone
     end
   end
-  object Edit1: TEdit
+  object xp: TEdit
     Left = 760
     Top = 80
     Width = 121
@@ -19136,7 +19143,7 @@ object liftoff_form: Tliftoff_form
     TabOrder = 1
     Text = '0'
   end
-  object Edit2: TEdit
+  object yp: TEdit
     Left = 760
     Top = 104
     Width = 121

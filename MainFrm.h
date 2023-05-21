@@ -74,7 +74,7 @@
 #include "forms/USOFrm.cpp"                   // Форма УСО
 #include "forms/krl_form.cpp"                 // Форма КРЛ
 #include "forms/cdn_clock_frm.cpp"            // Форма CDN clock MSK
-#include "forms/AboutFrm.cpp"                 // Форма "О программе..."
+//#include "forms/AboutFrm.cpp"                 // Форма "О программе..."
 #include "forms/BkuCFrm.cpp"                  // Форма БКУ-Ц "Символ-Ц"
 #include "brvi_irvi/irvi_brfi_frm.cpp"        // Форма ПРВИ
 #include "forms/graph_a1.cpp"                 // Форма графиков
@@ -163,7 +163,7 @@ __published:	// IDE-managed Components
         TTimer *villt;
         TLabel *Label45;
         TMenuItem *N28;
-        TPanel *Panel1;
+        TPanel *cst;
         TLabel *Label46;
         TLabel *Label20;
         TLabel *Label4;

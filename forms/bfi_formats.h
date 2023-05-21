@@ -97,7 +97,7 @@ __published:	// IDE-managed Components
         TLabel *Label77;
         TLabel *Label78;
         TLabel *Label79;
-        TLabel *Label89;
+        TLabel *f44_c;
         TLabel *Label100;
         TLabel *Label102;
         TLabel *Label103;
@@ -323,7 +323,7 @@ __published:	// IDE-managed Components
         TLabel *Label229;
         TLabel *Label230;
         TLabel *Label231;
-        TTabSheet *TabSheet1;
+        TTabSheet *f_test;
         TPanel *Panel11;
         TLabel *Label50;
         TLabel *Label130;
@@ -364,6 +364,8 @@ __published:	// IDE-managed Components
         TLabel *Label257;
         TLabel *Label258;
         TLabel *Label259;
+        TTabSheet *off;
+        TPanel *Panel12;
         void __fastcall BFIDATATIMERTimer(TObject *Sender);
         void __fastcall formatsChange(TObject *Sender);
 private:	// User declarations
@@ -371,8 +373,8 @@ public:		// User declarations
         __fastcall TBFI_Simvol_form(TComponent* Owner);
         
 //--- Временные переменные для вывода параметров на ВКУ ---------------------
-
 };
+int CurDispNum; // Number of ActivePAGE
 //---------------------------------------------------------------------------
 extern PACKAGE TBFI_Simvol_form *BFI_Simvol_form;
 //---------------------------------------------------------------------------

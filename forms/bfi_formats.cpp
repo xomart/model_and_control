@@ -18,41 +18,6 @@ TBFI_Simvol_form *BFI_Simvol_form;
 
 static int i_takt_asd[10];
 
-static String cw_B1_string;
-static String B1_string[5];
-static String B1_forDBG[5];
-static String B1_bfi;
-
-static String cw_B6_string;
-static String B6_string[5];
-static String B6_forDBG[5];
-static String B6_bfi;
-
-static String cw_B10_string;
-static String B10_string[5];
-static String B10_forDBG[5];
-static String B10_bfi;
-
-static String cw_a19_string;
-static String a19_string[5];
-static String a19_forDBG[5];
-static String a19_bfi;
-
-static String cw_A20_string;
-static String A20_string[5];
-static String A20_forDBG[5];
-static String A20_bfi;
-
-static String cw_R1_string;
-static String R1_string[5];
-static String R1_forDBG[5];
-static String R1_bfi;
-
-static String cw_R6_string;
-static String R6_string[5];
-static String R6_forDBG[5];
-static String R6_bfi;
-
 void display_show(bool power){  // Режим работы Дисплей
 if(power){
 /* BFI_Simvol_form->Label2->Visible=0;
@@ -96,8 +61,74 @@ __fastcall TBFI_Simvol_form::TBFI_Simvol_form(TComponent* Owner)
 
 }
 //---------------------------------------------------------------------------
+
+unsigned long boolArrayToBinary3(const bool cw[], size_t size) {
+    unsigned long binary = 0;
+    for (size_t i = 0; i < size; ++i) {
+        binary |= (cw[i] << (size - 1 - i));
+    }
+    return binary;
+}
+
+AnsiString binaryToOctal3(unsigned long binary) {
+    AnsiString octal = "";
+    unsigned long remainder;
+
+    while (binary > 0) {
+        remainder = binary % 8;
+        octal = IntToStr(remainder) + octal;
+        binary /= 8;
+    }
+
+    return octal;
+}
+
+AnsiString boolcwtostring3(const bool cw[]) {
+AnsiString temp;
+    unsigned long binary = boolArrayToBinary3(cw, 16);
+    temp = binaryToOctal3(binary);
+    if(temp.IsEmpty()) temp = "000000";
+    temp.Insert(".",2);
+    return temp;
+}
+
+AnsiString boolcwtostring4(const bool cw[]) {
+AnsiString temp;
+    unsigned long binary = boolArrayToBinary3(cw, 16);
+    temp = binaryToOctal3(binary);
+    if(temp.IsEmpty()) temp = "000000";
+    return temp;
+}
+
+AnsiString convertv(const bool cw[]){
+ unsigned long temp = StrToInt(boolcwtostring4(cw));
+ AnsiString out = FormatFloat("000.00",temp*0.04);
+ return out;
+}
+
+AnsiString GSOstring(){
+ AnsiString temp[5];
+ if(cw_a5[2]) temp[0] = "1"; else temp[0] = " ";   // 1
+ if(cw_a5[3]) temp[1] = "2"; else temp[1] = " ";   // 2
+ if(cw_a16[0])temp[2] = "3"; else temp[2] = " ";   // 3
+ if(cw_a16[2])temp[3] = "4"; else temp[3] = " ";   // 4
+ if(cw_a5[6]) temp[4] = "5"; else temp[4] = " ";   // 5
+ return temp[0]+temp[1]+temp[2]+temp[3]+temp[4];
+}
+
+void CheckAPN(){
+ if(CurDispNum==1)BFI_Simvol_form->formats->ActivePage=BFI_Simvol_form->f_41;
+ if(CurDispNum==2)BFI_Simvol_form->formats->ActivePage=BFI_Simvol_form->f_42;
+ if(CurDispNum==3)BFI_Simvol_form->formats->ActivePage=BFI_Simvol_form->f_43;
+ if(CurDispNum==4)BFI_Simvol_form->formats->ActivePage=BFI_Simvol_form->f_44;
+ if(CurDispNum==5)BFI_Simvol_form->formats->ActivePage=BFI_Simvol_form->f_45;
+ if(CurDispNum==6)BFI_Simvol_form->formats->ActivePage=BFI_Simvol_form->f_46;
+ if(CurDispNum==8)BFI_Simvol_form->formats->ActivePage=BFI_Simvol_form->off;
+}
+
 void __fastcall TBFI_Simvol_form::BFIDATATIMERTimer(TObject *Sender)
 {
+CheckAPN();
 ////////////////
 // EmerString //
 if(cw_TA1[0]){ // Если нет аварий, то...
@@ -195,6 +226,8 @@ if(dynamics.sks==0,000000)f43_rod->Caption=" 000.00";
 f43_resurs->Caption=FormatFloat("000.0",dynamics.rasp);                        // Ресур
 f43_omzf->Caption=FloatToStr(dynamics.omzx).sprintf("%06.03f",dynamics.omzx);
 f43_omyf->Caption=FloatToStr(dynamics.omyx).sprintf("%06.03f",dynamics.omyx);
+//f43_astr1->Caption=
+
 
 f46_vtek->Caption=FloatToStr(v_tek_m).sprintf("%06.05f",v_tek_m);
 if(cw_b1[12]) f46_tvc->Caption=gc1_time.FormatString("hh.nn.ss"); else
@@ -207,14 +240,14 @@ f41_45->Caption=FormatFloat("0.00000",ArgonMemoryType[45]);
 f41_46->Caption=FormatFloat("0.00000",ArgonMemoryType[46]);
 
 // Обработчик строки ГСО (пересмотреть)
-if(GSO_types==0) GSO_String="     "; else
-if(GSO_types==1) GSO_String="1    "; else
-if(GSO_types==2) GSO_String=" 2   "; else
-if(GSO_types==3) GSO_String="  3  "; else
-if(GSO_types==4) GSO_String="   4 "; else
-if(GSO_types==5) GSO_String="    5";
-f42_gso->Caption=GSO_String; f43_gso->Caption=GSO_String;
-f44_gso->Caption=GSO_String; f45_gso->Caption=GSO_String;
+//if(GSO_types==0) GSO_String="     "; else
+//if(cw_a5[2]) GSO_String="1    "; else
+//if(GSO_types==2) GSO_String=" 2   "; else
+//if(GSO_types==3) GSO_String="  3  "; else
+//if(GSO_types==4) GSO_String="   4 "; else
+//if(GSO_types==5) GSO_String="    5";
+f42_gso->Caption=GSOstring(); f43_gso->Caption=GSOstring();
+f44_gso->Caption=GSOstring(); f45_gso->Caption=GSOstring();
 
 //////////////////////////////////
 // Время Московское (модельное) //
@@ -241,272 +274,13 @@ f41_t3->Caption=arg_T3.FormatString("hh:nn:ss"); else
 f41_t3->Caption="";
 /////////////////////////
 // Перевод УС из 2 в 8 //
-if(i_takt_asd[1]==2){
-cw_B1_string +=(byte)cw_b1[0];  cw_B1_string +=(byte)cw_b1[1];
-cw_B1_string +=(byte)cw_b1[2];  cw_B1_string +=(byte)cw_b1[3];
- B1_forDBG[0] += "0";           B1_forDBG[0] +=(byte)cw_b1[1];
- B1_forDBG[0] +=(byte)cw_b1[2]; B1_forDBG[0] +=(byte)cw_b1[3];
-cw_B1_string +=(byte)cw_b1[4];  cw_B1_string +=(byte)cw_b1[5];
-cw_B1_string +=(byte)cw_b1[6];
- B1_forDBG[1] += "0";           B1_forDBG[1] +=(byte)cw_b1[4];
- B1_forDBG[1] +=(byte)cw_b1[5]; B1_forDBG[1] +=(byte)cw_b1[6];
-cw_B1_string +=(byte)cw_b1[7];  cw_B1_string +=(byte)cw_b1[8];
-cw_B1_string +=(byte)cw_b1[9];
- B1_forDBG[2] += "0";           B1_forDBG[2] +=(byte)cw_b1[7];
- B1_forDBG[2] +=(byte)cw_b1[8]; B1_forDBG[2] +=(byte)cw_b1[9];
-cw_B1_string +=(byte)cw_b1[10]; cw_B1_string +=(byte)cw_b1[11];
-cw_B1_string +=(byte)cw_b1[12];
- B1_forDBG[3] += "0";           B1_forDBG[3] +=(byte)cw_b1[10];
- B1_forDBG[3] +=(byte)cw_b1[11];B1_forDBG[3] +=(byte)cw_b1[12];
-cw_B1_string +=(byte)cw_b1[13]; cw_B1_string +=(byte)cw_b1[14];
-cw_B1_string +=(byte)cw_b1[15];
- B1_forDBG[4] += "0";           B1_forDBG[4] +=(byte)cw_b1[13];
- B1_forDBG[4] +=(byte)cw_b1[14];B1_forDBG[4] +=(byte)cw_b1[15];
-B1_string[0] = (byte)cw_b1[0];
-B1_string[1] = XtoY(Trim(B1_forDBG[0]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-B1_string[2] = XtoY(Trim(B1_forDBG[1]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-B1_string[3] = XtoY(Trim(B1_forDBG[2]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-B1_string[4] = XtoY(Trim(B1_forDBG[3]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-B1_string[5] = XtoY(Trim(B1_forDBG[4]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-f41_B1->Caption=B1_string[0]+"."+B1_string[1]+""+B1_string[2]+""+B1_string[3]+""+B1_string[4]+""+B1_string[5];
-B1_string[0] = "";B1_string[1] = "";B1_string[2] = "";B1_string[3] = "";B1_string[4] = "";B1_string[5] = "";
-B1_forDBG[0] = "";B1_forDBG[1] = "";B1_forDBG[2] = "";B1_forDBG[3] = "";B1_forDBG[4] = "";cw_B1_string = "";
-
-cw_B6_string +=(byte)cw_b6[0];
-cw_B6_string +=(byte)cw_b6[1];
-cw_B6_string +=(byte)cw_b6[2];
-cw_B6_string +=(byte)cw_b6[3];
- B6_forDBG[0] += "0";
- B6_forDBG[0] +=(byte)cw_b6[1];
- B6_forDBG[0] +=(byte)cw_b6[2];
- B6_forDBG[0] +=(byte)cw_b6[3];
-cw_B6_string +=(byte)cw_b6[4];
-cw_B6_string +=(byte)cw_b6[5];
-cw_B6_string +=(byte)cw_b6[6];
- B6_forDBG[1] += "0";
- B6_forDBG[1] +=(byte)cw_b6[4];
- B6_forDBG[1] +=(byte)cw_b6[5];
- B6_forDBG[1] +=(byte)cw_b6[6];
-cw_B6_string +=(byte)cw_b6[7];
-cw_B6_string +=(byte)cw_b6[8];
-cw_B6_string +=(byte)cw_b6[9];
- B6_forDBG[2] += "0";
- B6_forDBG[2] +=(byte)cw_b6[7];
- B6_forDBG[2] +=(byte)cw_b6[8];
- B6_forDBG[2] +=(byte)cw_b6[9];
-cw_B6_string +=(byte)cw_b6[10];
-cw_B6_string +=(byte)cw_b6[11];
-cw_B6_string +=(byte)cw_b6[12];
- B6_forDBG[3] += "0";
- B6_forDBG[3] +=(byte)cw_b6[10];
- B6_forDBG[3] +=(byte)cw_b6[11];
- B6_forDBG[3] +=(byte)cw_b6[12];
-cw_B6_string +=(byte)cw_b6[13];
-cw_B6_string +=(byte)cw_b6[14];
-cw_B6_string +=(byte)cw_b6[15];
- B6_forDBG[4] += "0";
- B6_forDBG[4] +=(byte)cw_b6[13];
- B6_forDBG[4] +=(byte)cw_b6[14];
- B6_forDBG[4] +=(byte)cw_b6[15];
-B6_string[0] = (byte)cw_b6[0];
-B6_string[1] = XtoY(Trim(B6_forDBG[0]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-B6_string[2] = XtoY(Trim(B6_forDBG[1]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-B6_string[3] = XtoY(Trim(B6_forDBG[2]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-B6_string[4] = XtoY(Trim(B6_forDBG[3]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-B6_string[5] = XtoY(Trim(B6_forDBG[4]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-f41_B6->Caption=B6_string[0]+"."+B6_string[1]+""+B6_string[2]+""+B6_string[3]+""+B6_string[4]+""+B6_string[5];
-B6_string[0] = "";B6_string[1] = "";B6_string[2] = "";B6_string[3] = "";B6_string[4] = "";B6_string[5] = "";
-B6_forDBG[0] = "";B6_forDBG[1] = "";B6_forDBG[2] = "";B6_forDBG[3] = "";B6_forDBG[4] = "";cw_B6_string = "";
-
-cw_B10_string +=(byte)cw_b10[0];
-cw_B10_string +=(byte)cw_b10[1];
-cw_B10_string +=(byte)cw_b10[2];
-cw_B10_string +=(byte)cw_b10[3];
- B10_forDBG[0] += "0";
- B10_forDBG[0] +=(byte)cw_b10[1];
- B10_forDBG[0] +=(byte)cw_b10[2];
- B10_forDBG[0] +=(byte)cw_b10[3];
-cw_B10_string +=(byte)cw_b10[4];
-cw_B10_string +=(byte)cw_b10[5];
-cw_B10_string +=(byte)cw_b10[6];
- B10_forDBG[1] += "0";
- B10_forDBG[1] +=(byte)cw_b10[4];
- B10_forDBG[1] +=(byte)cw_b10[5];
- B10_forDBG[1] +=(byte)cw_b10[6];
-cw_B10_string +=(byte)cw_b10[7];
-cw_B10_string +=(byte)cw_b10[8];
-cw_B10_string +=(byte)cw_b10[9];
- B10_forDBG[2] += "0";
- B10_forDBG[2] +=(byte)cw_b10[7];
- B10_forDBG[2] +=(byte)cw_b10[8];
- B10_forDBG[2] +=(byte)cw_b10[9];
-cw_B10_string +=(byte)cw_b10[10];
-cw_B10_string +=(byte)cw_b10[11];
-cw_B10_string +=(byte)cw_b10[12];
- B10_forDBG[3] += "0";
- B10_forDBG[3] +=(byte)cw_b10[10];
- B10_forDBG[3] +=(byte)cw_b10[11];
- B10_forDBG[3] +=(byte)cw_b10[12];
-cw_B10_string +=(byte)cw_b10[13];
-cw_B10_string +=(byte)cw_b10[14];
-cw_B10_string +=(byte)cw_b10[15];
- B10_forDBG[4] += "0";
- B10_forDBG[4] +=(byte)cw_b10[13];
- B10_forDBG[4] +=(byte)cw_b10[14];
- B10_forDBG[4] +=(byte)cw_b10[15];
-B10_string[0] = (byte)cw_b10[0];
-B10_string[1] = XtoY(Trim(B10_forDBG[0]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-B10_string[2] = XtoY(Trim(B10_forDBG[1]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-B10_string[3] = XtoY(Trim(B10_forDBG[2]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-B10_string[4] = XtoY(Trim(B10_forDBG[3]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-B10_string[5] = XtoY(Trim(B10_forDBG[4]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-f41_B10->Caption=B10_string[0]+"."+B10_string[1]+""+B10_string[2]+""+B10_string[3]+""+B10_string[4]+""+B10_string[5];
-B10_string[0] = "";B10_string[1] = "";B10_string[2] = "";B10_string[3] = "";B10_string[4] = "";B10_string[5] = "";
-B10_forDBG[0] = "";B10_forDBG[1] = "";B10_forDBG[2] = "";B10_forDBG[3] = "";B10_forDBG[4] = "";cw_B10_string = "";
-
-cw_a19_string +=(byte)cw_a19[0];
-cw_a19_string +=(byte)cw_a19[1];
-cw_a19_string +=(byte)cw_a19[2];
-cw_a19_string +=(byte)cw_a19[3];
- a19_forDBG[0] += "0";
- a19_forDBG[0] +=(byte)cw_a19[1];
- a19_forDBG[0] +=(byte)cw_a19[2];
- a19_forDBG[0] +=(byte)cw_a19[3];
-cw_a19_string +=(byte)cw_a19[4];
-cw_a19_string +=(byte)cw_a19[5];
-cw_a19_string +=(byte)cw_a19[6];
- a19_forDBG[1] += "0";
- a19_forDBG[1] +=(byte)cw_a19[4];
- a19_forDBG[1] +=(byte)cw_a19[5];
- a19_forDBG[1] +=(byte)cw_a19[6];
-cw_a19_string +=(byte)cw_a19[7];
-cw_a19_string +=(byte)cw_a19[8];
-cw_a19_string +=(byte)cw_a19[9];
- a19_forDBG[2] += "0";
- a19_forDBG[2] +=(byte)cw_a19[7];
- a19_forDBG[2] +=(byte)cw_a19[8];
- a19_forDBG[2] +=(byte)cw_a19[9];
-cw_a19_string +=(byte)cw_a19[10];
-cw_a19_string +=(byte)cw_a19[11];
-cw_a19_string +=(byte)cw_a19[12];
- a19_forDBG[3] += "0";
- a19_forDBG[3] +=(byte)cw_a19[10];
- a19_forDBG[3] +=(byte)cw_a19[11];
- a19_forDBG[3] +=(byte)cw_a19[12];
-cw_a19_string +=(byte)cw_a19[13];
-cw_a19_string +=(byte)cw_a19[14];
-cw_a19_string +=(byte)cw_a19[15];
- a19_forDBG[4] += "0";
- a19_forDBG[4] +=(byte)cw_a19[13];
- a19_forDBG[4] +=(byte)cw_a19[14];
- a19_forDBG[4] +=(byte)cw_a19[15];
-a19_string[0] = (byte)cw_a19[0];
-a19_string[1] = XtoY(Trim(a19_forDBG[0]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-a19_string[2] = XtoY(Trim(a19_forDBG[1]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-a19_string[3] = XtoY(Trim(a19_forDBG[2]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-a19_string[4] = XtoY(Trim(a19_forDBG[3]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-a19_string[5] = XtoY(Trim(a19_forDBG[4]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-f43_c->Caption=a19_string[0]+"."+a19_string[1]+""+a19_string[2]+""+a19_string[3]+""+a19_string[4]+""+a19_string[5];
-a19_string[0] = "";a19_string[1] = "";a19_string[2] = "";a19_string[3] = "";a19_string[4] = "";a19_string[5] = "";
-a19_forDBG[0] = "";a19_forDBG[1] = "";a19_forDBG[2] = "";a19_forDBG[3] = "";a19_forDBG[4] = "";cw_a19_string = "";
-
-cw_R1_string +=(byte)cw_r1[0];
-cw_R1_string +=(byte)cw_r1[1];
-cw_R1_string +=(byte)cw_r1[2];
-cw_R1_string +=(byte)cw_r1[3];
- R1_forDBG[0] += "0";
- R1_forDBG[0] +=(byte)cw_r1[1];
- R1_forDBG[0] +=(byte)cw_r1[2];
- R1_forDBG[0] +=(byte)cw_r1[3];
-cw_R1_string +=(byte)cw_r1[4];
-cw_R1_string +=(byte)cw_r1[5];
-cw_R1_string +=(byte)cw_r1[6];
- R1_forDBG[1] += "0";
- R1_forDBG[1] +=(byte)cw_r1[4];
- R1_forDBG[1] +=(byte)cw_r1[5];
- R1_forDBG[1] +=(byte)cw_r1[6];
-cw_R1_string +=(byte)cw_r1[7];
-cw_R1_string +=(byte)cw_r1[8];
-cw_R1_string +=(byte)cw_r1[9];
- R1_forDBG[2] += "0";
- R1_forDBG[2] +=(byte)cw_r1[7];
- R1_forDBG[2] +=(byte)cw_r1[8];
- R1_forDBG[2] +=(byte)cw_r1[9];
-cw_R1_string +=(byte)cw_r1[10];
-cw_R1_string +=(byte)cw_r1[11];
-cw_R1_string +=(byte)cw_r1[12];
- R1_forDBG[3] += "0";
- R1_forDBG[3] +=(byte)cw_r1[10];
- R1_forDBG[3] +=(byte)cw_r1[11];
- R1_forDBG[3] +=(byte)cw_r1[12];
-cw_R1_string +=(byte)cw_r1[13];
-cw_R1_string +=(byte)cw_r1[14];
-cw_R1_string +=(byte)cw_r1[15];
- R1_forDBG[4] += "0";
- R1_forDBG[4] +=(byte)cw_r1[13];
- R1_forDBG[4] +=(byte)cw_r1[14];
- R1_forDBG[4] +=(byte)cw_r1[15];
-R1_string[0] = (byte)cw_r1[0];
-R1_string[1] = XtoY(Trim(R1_forDBG[0]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-R1_string[2] = XtoY(Trim(R1_forDBG[1]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-R1_string[3] = XtoY(Trim(R1_forDBG[2]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-R1_string[4] = XtoY(Trim(R1_forDBG[3]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-R1_string[5] = XtoY(Trim(R1_forDBG[4]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-f41_R1->Caption=R1_string[0]+"."+R1_string[1]+""+R1_string[2]+""+R1_string[3]+""+R1_string[4]+""+R1_string[5];
-R1_string[0] = "";R1_string[1] = "";R1_string[2] = "";R1_string[3] = "";R1_string[4] = "";R1_string[5] = "";
-R1_forDBG[0] = "";R1_forDBG[1] = "";R1_forDBG[2] = "";R1_forDBG[3] = "";R1_forDBG[4] = "";cw_R1_string = "";
-
-cw_R6_string +=(byte)cw_r6[0];
-cw_R6_string +=(byte)cw_r6[1];
-cw_R6_string +=(byte)cw_r6[2];
-cw_R6_string +=(byte)cw_r6[3];
- R6_forDBG[0] += "0";
- R6_forDBG[0] +=(byte)cw_r6[1];
- R6_forDBG[0] +=(byte)cw_r6[2];
- R6_forDBG[0] +=(byte)cw_r6[3];
-cw_R6_string +=(byte)cw_r6[4];
-cw_R6_string +=(byte)cw_r6[5];
-cw_R6_string +=(byte)cw_r6[6];
- R6_forDBG[1] += "0";
- R6_forDBG[1] +=(byte)cw_r6[4];
- R6_forDBG[1] +=(byte)cw_r6[5];
- R6_forDBG[1] +=(byte)cw_r6[6];
-cw_R6_string +=(byte)cw_r6[7];
-cw_R6_string +=(byte)cw_r6[8];
-cw_R6_string +=(byte)cw_r6[9];
- R6_forDBG[2] += "0";
- R6_forDBG[2] +=(byte)cw_r6[7];
- R6_forDBG[2] +=(byte)cw_r6[8];
- R6_forDBG[2] +=(byte)cw_r6[9];
-cw_R6_string +=(byte)cw_r6[10];
-cw_R6_string +=(byte)cw_r6[11];
-cw_R6_string +=(byte)cw_r6[12];
- R6_forDBG[3] += "0";
- R6_forDBG[3] +=(byte)cw_r6[10];
- R6_forDBG[3] +=(byte)cw_r6[11];
- R6_forDBG[3] +=(byte)cw_r6[12];
-cw_R6_string +=(byte)cw_r6[13];
-cw_R6_string +=(byte)cw_r6[14];
-cw_R6_string +=(byte)cw_r6[15];
- R6_forDBG[4] += "0";
- R6_forDBG[4] +=(byte)cw_r6[13];
- R6_forDBG[4] +=(byte)cw_r6[14];
- R6_forDBG[4] +=(byte)cw_r6[15];
-R6_string[0] = (byte)cw_r6[0];
-R6_string[1] = XtoY(Trim(R6_forDBG[0]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-R6_string[2] = XtoY(Trim(R6_forDBG[1]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-R6_string[3] = XtoY(Trim(R6_forDBG[2]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-R6_string[4] = XtoY(Trim(R6_forDBG[3]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-R6_string[5] = XtoY(Trim(R6_forDBG[4]), StrToIntDef(2, 10), StrToIntDef(16, 10));
-f41_R6->Caption=R6_string[0]+"."+R6_string[1]+""+R6_string[2]+""+R6_string[3]+""+R6_string[4]+""+R6_string[5];
-R6_string[0] = "";R6_string[1] = "";R6_string[2] = "";R6_string[3] = "";R6_string[4] = "";R6_string[5] = "";
-R6_forDBG[0] = "";R6_forDBG[1] = "";R6_forDBG[2] = "";R6_forDBG[3] = "";R6_forDBG[4] = "";cw_R6_string = "";
-
-
-
-i_takt_asd[1]=0;
-} else i_takt_asd[1]++;
-
+f41_B1->Caption=boolcwtostring3(cw_b1);
+f41_B6->Caption=boolcwtostring3(cw_b6);
+f41_B10->Caption=boolcwtostring3(cw_b10);
+f43_c->Caption=boolcwtostring3(cw_a19);
+f41_R1->Caption=boolcwtostring3(cw_r1);
+f41_R6->Caption=boolcwtostring3(cw_r6);
+f44_c->Caption=boolcwtostring3(cw_a19);
 }
 //---------------------------------------------------------------------------
 void __fastcall TBFI_Simvol_form::formatsChange(TObject *Sender)

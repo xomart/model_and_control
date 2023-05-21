@@ -55,7 +55,7 @@ if(brvi_on){
 if(!irvi_a){        // If not sign А ("AA" Error)
   //USO_Booled[16]
 AnsiString TempStr;
-  if(IrBrForm->i1->Caption.IsEmpty()){
+  if(IrBrForm->i1->Caption.IsEmpty()||IrBrForm->i1->Caption==" "){
    USO_Booled[16][0] = 0;
    USO_Booled[16][1] = 0;
    USO_Booled[16][2] = 0;
@@ -68,7 +68,7 @@ AnsiString TempStr;
    USO_Booled[16][3] = StrToInt(TempStr.SubString(4,1));
   }
 
-  if(IrBrForm->i2->Caption.IsEmpty()){
+  if(IrBrForm->i2->Caption.IsEmpty()||IrBrForm->i2->Caption==" "){
    USO_Booled[16][4] = 0;
    USO_Booled[16][5] = 0;
    USO_Booled[16][6] = 0;
@@ -81,7 +81,7 @@ AnsiString TempStr;
    USO_Booled[16][7] = StrToInt(TempStr.SubString(4,1));
   }
 
-  if(IrBrForm->i3->Caption.IsEmpty()){
+  if(IrBrForm->i3->Caption.IsEmpty()||IrBrForm->i3->Caption==" "){
    USO_Booled[16][8] = 0;
    USO_Booled[16][9] = 0;
    USO_Booled[16][10] = 0;
@@ -94,7 +94,7 @@ AnsiString TempStr;
    USO_Booled[16][11] = StrToInt(TempStr.SubString(4,1));
   }
 
-    if(IrBrForm->i4->Caption.IsEmpty()){
+    if(IrBrForm->i4->Caption.IsEmpty()||IrBrForm->i4->Caption==" "){
    USO_Booled[16][12] = 0;
    USO_Booled[16][13] = 0;
    USO_Booled[16][14] = 0;
@@ -107,7 +107,7 @@ AnsiString TempStr;
    USO_Booled[16][15] = StrToInt(TempStr.SubString(4,1));
   }
 
-    if(IrBrForm->i5->Caption.IsEmpty()){
+    if(IrBrForm->i5->Caption.IsEmpty()||IrBrForm->i5->Caption==" "){
    USO_Booled[17][0] = 0;
    USO_Booled[17][1] = 0;
    USO_Booled[17][2] = 0;
@@ -120,7 +120,7 @@ AnsiString TempStr;
    USO_Booled[17][3] = StrToInt(TempStr.SubString(4,1));
   }
 
-    if(IrBrForm->i6->Caption.IsEmpty()){
+    if(IrBrForm->i6->Caption.IsEmpty()||IrBrForm->i6->Caption==" "){
    USO_Booled[17][4] = 0;
    USO_Booled[17][5] = 0;
    USO_Booled[17][6] = 0;
@@ -133,7 +133,7 @@ AnsiString TempStr;
    USO_Booled[17][7] = StrToInt(TempStr.SubString(4,1));
   }
 
-      if(IrBrForm->i7->Caption.IsEmpty()){
+      if(IrBrForm->i7->Caption.IsEmpty()||IrBrForm->i7->Caption==" "){
    USO_Booled[17][8] = 0;
    USO_Booled[17][9] = 0;
    USO_Booled[17][10] = 0;
@@ -146,7 +146,7 @@ AnsiString TempStr;
    USO_Booled[17][11] = StrToInt(TempStr.SubString(4,1));
   }
 
-      if(IrBrForm->i8->Caption.IsEmpty()){
+      if(IrBrForm->i8->Caption.IsEmpty()||IrBrForm->i8->Caption==" "){
    USO_Booled[17][12] = 0;
    USO_Booled[17][13] = 0;
    USO_Booled[17][14] = 0;
@@ -159,7 +159,7 @@ AnsiString TempStr;
    USO_Booled[17][15] = StrToInt(TempStr.SubString(4,1));
   }
 
-      if(IrBrForm->i9->Caption.IsEmpty()){
+      if(IrBrForm->i9->Caption.IsEmpty()||IrBrForm->i9->Caption==" "){
    USO_Booled[18][0] = 0;
    USO_Booled[18][1] = 0;
    USO_Booled[18][2] = 0;
@@ -172,7 +172,7 @@ AnsiString TempStr;
    USO_Booled[18][3] = StrToInt(TempStr.SubString(4,1));
   }
 
-      if(IrBrForm->i10->Caption.IsEmpty()){
+      if(IrBrForm->i10->Caption.IsEmpty()||IrBrForm->i10->Caption==" "){
    USO_Booled[18][4] = 0;
    USO_Booled[18][5] = 0;
    USO_Booled[18][6] = 0;
@@ -185,7 +185,7 @@ AnsiString TempStr;
    USO_Booled[18][7] = StrToInt(TempStr.SubString(4,1));
   }
 
-        if(IrBrForm->i11->Caption.IsEmpty()){
+        if(IrBrForm->i11->Caption.IsEmpty()||IrBrForm->i11->Caption==" "){
    USO_Booled[18][8] = 0;
    USO_Booled[18][9] = 0;
    USO_Booled[18][10] = 0;
@@ -198,7 +198,7 @@ AnsiString TempStr;
    USO_Booled[18][11] = StrToInt(TempStr.SubString(4,1));
   }
 
-        if(IrBrForm->i12->Caption.IsEmpty()){
+        if(IrBrForm->i12->Caption.IsEmpty()||IrBrForm->i12->Caption==" "){
    USO_Booled[18][12] = 0;
    USO_Booled[18][13] = 0;
    USO_Booled[18][14] = 0;
@@ -211,7 +211,7 @@ AnsiString TempStr;
    USO_Booled[18][15] = StrToInt(TempStr.SubString(4,1));
   }
 
-        if(IrBrForm->i13->Caption.IsEmpty()){
+        if(IrBrForm->i13->Caption.IsEmpty()||IrBrForm->i13->Caption==" "){
    USO_Booled[19][0] = 0;
    USO_Booled[19][1] = 0;
    USO_Booled[19][2] = 0;
@@ -223,7 +223,7 @@ AnsiString TempStr;
    USO_Booled[19][2] = StrToInt(TempStr.SubString(3,1));
    USO_Booled[19][3] = StrToInt(TempStr.SubString(4,1)); }
 
-           if(IrBrForm->i14->Caption.IsEmpty()){
+           if(IrBrForm->i14->Caption.IsEmpty()||IrBrForm->i14->Caption==" "){
    USO_Booled[19][4] = 0;
    USO_Booled[19][5] = 0;
    USO_Booled[19][6] = 0;
@@ -236,7 +236,7 @@ AnsiString TempStr;
    USO_Booled[19][7] = StrToInt(TempStr.SubString(4,1));
   }
 
-  if(IrBrForm->i15->Caption.IsEmpty()){
+  if(IrBrForm->i15->Caption.IsEmpty()||IrBrForm->i15->Caption==" "){
    USO_Booled[19][8] = 0;
    USO_Booled[19][8] = 0;
   } else if(IrBrForm->i15->Caption=="+"){
@@ -248,6 +248,24 @@ AnsiString TempStr;
   }
   } // A
  } //brvi_on
+}
+
+void SetSet(){
+IrBrForm->i1->Caption=irvi_string.SubString(1,1);
+IrBrForm->i2->Caption=irvi_string.SubString(2,1);
+IrBrForm->i3->Caption=irvi_string.SubString(3,1);
+IrBrForm->i4->Caption=irvi_string.SubString(4,1);
+IrBrForm->i5->Caption=irvi_string.SubString(5,1);
+IrBrForm->i6->Caption=irvi_string.SubString(6,1);
+IrBrForm->i7->Caption=irvi_string.SubString(7,1);
+IrBrForm->i8->Caption=irvi_string.SubString(8,1);
+IrBrForm->i9->Caption=irvi_string.SubString(9,1);
+IrBrForm->i10->Caption=irvi_string.SubString(10,1);
+IrBrForm->i11->Caption=irvi_string.SubString(11,1);
+IrBrForm->i12->Caption=irvi_string.SubString(12,1);
+IrBrForm->i13->Caption=irvi_string.SubString(13,1);
+IrBrForm->i14->Caption=irvi_string.SubString(14,1);
+IrBrForm->i15->Caption=irvi_string.SubString(15,1);
 }
 
 void irvi_clear(void)  // IRVI Clear Indicators Procedure
@@ -269,113 +287,29 @@ IrBrForm->i14->Caption="";
 IrBrForm->i15->Caption="";
 }
 
-void brvi_send (AnsiString i1, AnsiString  i2, AnsiString i3, AnsiString i4,
-AnsiString i5,AnsiString i6,AnsiString i7,AnsiString i8,AnsiString i9,AnsiString i10,
-AnsiString i11,AnsiString i12,AnsiString i13,AnsiString i14,AnsiString i15) {
 
-// Проверяем програма ли это Аргона
-static int br_reg;
-// Обработчик пустого ввода
-if(i1.IsEmpty()&&i8.IsEmpty()){
-IrBrForm->i1->Caption="A";
-IrBrForm->i2->Caption="A";
-IrBrForm->i3->Caption="A";
-IrBrForm->i4->Caption="A";
-IrBrForm->i5->Caption="A";
-IrBrForm->i6->Caption="A";
-IrBrForm->i7->Caption="A";
-IrBrForm->i8->Caption="A";
-IrBrForm->i9->Caption="A";
-IrBrForm->i10->Caption="A";
-IrBrForm->i11->Caption="A";
-IrBrForm->i12->Caption="A";
-IrBrForm->i13->Caption="A";
-IrBrForm->i14->Caption="A";
-IrBrForm->i15->Caption="";
-irvi_a = 1; }
 
-else if(i1=="A"){
-int f;
-irvi_a = 1;
- if (i3=="") f=1;//Ситуация АА, переводим каретку на И3
-
+void irvitestc(int ma, int mb)  // IRVI TestInd Proc
+{
+IrBrForm->i1->Caption="0";
+IrBrForm->i2->Caption="1";
+IrBrForm->i3->Caption=IntToStr(ma);
+IrBrForm->i4->Caption=IntToStr(ma);
+IrBrForm->i5->Caption=IntToStr(ma);
+IrBrForm->i6->Caption=IntToStr(ma);
+IrBrForm->i7->Caption=IntToStr(ma);
+IrBrForm->i8->Caption=IntToStr(ma);
+IrBrForm->i9->Caption=IntToStr(ma);
+IrBrForm->i10->Caption=IntToStr(ma);
+IrBrForm->i11->Caption=IntToStr(ma);
+IrBrForm->i12->Caption=IntToStr(ma);
+IrBrForm->i13->Caption=IntToStr(ma);
+IrBrForm->i14->Caption=IntToStr(ma);
+if(mb==9)
+IrBrForm->i15->Caption="+";
+if(mb==10)
+IrBrForm->i15->Caption="-";
 }
-else {
-br_reg = StrToInt(IrBrForm->i1->Caption+IrBrForm->i2->Caption);
-int br_in3 = StrToInt(IrBrForm->i3->Caption);
-switch(br_reg) // Определение и исполнение введенного режима (Первый фильтр по И1 и И2)
-      {
-        case 00: /* Приоритетный или принудительный режим выдачи пр-м 1 - 4 */ break;
-              switch(br_in3) {
-                     case 1: /* Вывод аварийных сообщений */ break;
-                     case 2: /* Вывод инструкций */ break;
-                     case 3: /* Сервис СКД */ break;
-                     case 4: /* Вывод командной информации */
-                        int cw_a; // Адрес Управляющего слова
-                                if(i4=="0") cw_a=StrToInt(i5+i6+i7);
-                           else if(i5=="0") cw_a=StrToInt(i6+i7);break;
-                     default: {
-                                 IrBrForm->i1->Caption="A";
-                                 IrBrForm->i2->Caption="A";
-                                 IrBrForm->i3->Caption="A";
-                                 IrBrForm->i4->Caption="A";
-                                 IrBrForm->i5->Caption="A";
-                                 IrBrForm->i6->Caption="A";
-                                 IrBrForm->i7->Caption="A";
-                                 IrBrForm->i8->Caption="A";
-                                 IrBrForm->i9->Caption="A";
-                                 IrBrForm->i10->Caption="A";
-                                 IrBrForm->i11->Caption="A";
-                                 IrBrForm->i12->Caption="A";
-                                 IrBrForm->i13->Caption="A";
-                                 IrBrForm->i14->Caption="A";
-                                 IrBrForm->i15->Caption=""; }
-                         } // Switch i3
-        case 04: /* Динамический вывод 10-х чисел */ break;
-        case 05: /* Динамический вывод 8-х чисел */ break;
-        case 10: /* Ввод уставки РУС */   halfe=true; break;
-        case 11: /* Ввод уставки АУС 1-й группы */  break;
-        case 12: /* Ввод уставки АУС 2-й группы */  break;
-        case 14: /* Одиночный ввод 10-х чисел */  break;
-        case 15: /* Одиночный ввод 8-х чисел */  break;
-        case 17: /* Групповой ввод 10-х чисел */ break;
-        case 18: /*  */ break;
-        case 21: /* Вывод уставки АУС 1-й группы */ break;
-        case 22: /* Вывод уставки АУС 2-й группы */ break;
-        case 24: /* Одиночный вывод 10-х чисел */ break;
-        case 25: /* Одиночный вывод 8-х чисел */ break;
-        case 27: /* Групповой вывод 10-х чисел */ break;
-        case 28: /* Групповой вывод 8-х чисел  */break;
-        case 30: /* Изменение состояния признака в слове - запись единицы */ break;
-        case 31: /* Изменение состояния признака в слове - запись нуля */ break;
-        case 40: /*  */ break;
-        case 41: /*  */ break;
-        case 42: /*  */ break;
-        case 43: /*  */ break;
-        case 44: /*  */ break;
-        case 45: /*  */ break;
-        case 46: /*  */ break;
-        case 48: /* Сверка времени */ break;
-        default: {
-IrBrForm->i1->Caption="A";
-IrBrForm->i2->Caption="A";
-IrBrForm->i3->Caption="A";
-IrBrForm->i4->Caption="A";
-IrBrForm->i5->Caption="A";
-IrBrForm->i6->Caption="A";
-IrBrForm->i7->Caption="A";
-IrBrForm->i8->Caption="A";
-IrBrForm->i9->Caption="A";
-IrBrForm->i10->Caption="A";
-IrBrForm->i11->Caption="A";
-IrBrForm->i12->Caption="A";
-IrBrForm->i13->Caption="A";
-IrBrForm->i14->Caption="A";
-IrBrForm->i15->Caption=""; }
-      } // Switch bg_reg
-    } // !i1=="A"
-
-} //brvi_send
 
 //---------------------------------------------------------------------------
 __fastcall TIrBrForm::TIrBrForm(TComponent* Owner)
@@ -417,13 +351,15 @@ i12->Caption="";
 i13->Caption="";
 i14->Caption="";
 i15->Caption="";
-Panel1->Color=clGreen;
+Panel1->Color=clGray;
+JPS(1,is_operator,is_prvi,"ПРВИ выключен","");
 }
 //---------------------------------------------------------------------------
 void __fastcall TIrBrForm::SpeedButton14Click(TObject *Sender)
 {
 brvi_on=true;
 Panel1->Color=clLime;
+JPS(1,is_operator,is_prvi,"Включен ПРВИ","");
 }
 //---------------------------------------------------------------------------
 void __fastcall TIrBrForm::SpeedButton16Click(TObject *Sender)
@@ -449,10 +385,11 @@ i15->Caption="";
 void __fastcall TIrBrForm::isp_btnClick(TObject *Sender)
 {
 if(brvi_on) { // If BRVI is ON
-if(i1->Caption==""&&i2->Caption==""){  // If first and second empty,
+if(i1->Caption.IsEmpty()&&i2->Caption.IsEmpty()){  // If first and second empty,
 i1->Caption=="A";     // Then error-message "AA"
 i2->Caption=="A";
 JPS(3,is_irvi,is_operator,"АА","");  // and log to jou
+return;
 } else {              // или (если 1И и 2И не пустые)
 AnsiString brvi_msg = i1->Caption+i2->Caption+i3->Caption+i4->Caption+    // Создаем строку текущего состояния И ИРВИ
 i5->Caption+i6->Caption+i7->Caption+i8->Caption+i9->Caption+i10->Caption+
@@ -466,8 +403,10 @@ irvi_clear();
 
 irvi_string = brvi_msg; // Присваиваем глобальной переменной значение ИРВИ
 
-ChekIrvi(irvi_string); }}else  // Если БРВИ выключен
-JPS(3,is_miu,is_operator,cmd_brvi_error,"");   // Ошибка в Журнал
+ChekIrvi(irvi_string);
+
+ }}else  // Если БРВИ выключен
+JPS(3,is_miu+" ",is_operator.Delete(is_operator.Length(),1),cmd_brvi_error,"");   // Ошибка в Журнал
 }
 //---------------------------------------------------------------------------
 void __fastcall TIrBrForm::SpeedButton1Click(TObject *Sender)
@@ -879,6 +818,7 @@ else if(i1->Caption.Length()==1)
 
 void __fastcall TIrBrForm::irvi_send_tTimer(TObject *Sender)
 {
+//SetSet();
 Timer1->Enabled=false;
 if(!irvi_err){
 i1->Caption=irvi_string.SubString(1,1);
@@ -913,6 +853,8 @@ i14->Caption="";
 i15->Caption="";
 }
 irvi_send_t->Enabled=false;
+
+
 }
 //---------------------------------------------------------------------------
 
@@ -925,9 +867,19 @@ irvi_send_t->Enabled=true;
 
 void __fastcall TIrBrForm::USOtTimer(TObject *Sender)
 {
-//IrviUSOSt();
+IrviUSOSt();
 IrviStringRT = IrStrRT();
 }
 
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+void __fastcall TIrBrForm::testtTimer(TObject *Sender)
+{
+int x, c;
+irvitestc(x,c);
+//if(x==9)testt->
+}
+//---------------------------------------------------------------------------
+
 #endif // IRVI
+

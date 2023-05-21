@@ -1,6 +1,6 @@
 object MainForm: TMainForm
-  Left = 208
-  Top = 82
+  Left = 906
+  Top = 179
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   ClientHeight = 532
@@ -565,11 +565,17 @@ object MainForm: TMainForm
       Caption = #1057#1086#1089#1090#1086#1103#1085#1080#1077' '#1079#1072#1103#1074#1082#1080' '#1085#1072' '#1087#1088#1080#1089#1074#1072#1080#1074#1072#1085#1080#1077':  '#1053#1045#1058
     end
     object Label20: TLabel
-      Left = 560
+      Left = 616
       Top = 48
-      Width = 140
-      Height = 14
-      Caption = #1048#1085#1092#1086#1088#1084#1072#1094#1080#1086#1085#1085#1086#1077' '#1090#1072#1073#1083#1086
+      Width = 27
+      Height = 19
+      Caption = #1062#1057#1058
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Consolas'
+      Font.Style = [fsBold]
+      ParentFont = False
     end
     object Label4: TLabel
       Left = 256
@@ -706,7 +712,7 @@ object MainForm: TMainForm
       TabOrder = 2
       OnClick = Button12Click
     end
-    object Panel1: TPanel
+    object cst: TPanel
       Left = 544
       Top = 66
       Width = 177
@@ -2392,7 +2398,7 @@ object MainForm: TMainForm
     Enabled = False
     Interval = 100
     Left = 392
-    Top = 448
+    Top = 441
   end
   object un_serv: TIdTCPServer
     Bindings = <

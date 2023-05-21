@@ -55,6 +55,7 @@ __published:	// IDE-managed Components
         TTimer *irvi_send_t;
         TTimer *Timer1;
         TTimer *USOt;
+        TTimer *testt;
         void __fastcall SpeedButton9Click(TObject *Sender);
         void __fastcall SpeedButton12Click(TObject *Sender);
         void __fastcall SpeedButton17Click(TObject *Sender);
@@ -75,6 +76,7 @@ __published:	// IDE-managed Components
         void __fastcall irvi_send_tTimer(TObject *Sender);
         void __fastcall Timer1Timer(TObject *Sender);
         void __fastcall USOtTimer(TObject *Sender);
+        void __fastcall testtTimer(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TIrBrForm(TComponent* Owner);

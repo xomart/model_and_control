@@ -510,6 +510,12 @@ if(KSP_Booled[15][14]){ // Ф 15
         JPS(1,"Вентеляция дыхания","","","");
 }
 
+if(cw_a5[1]){  // Обобщённый признак ГСО
+ USO_Booled[11][8] = 1;
+} else {
+ USO_Booled[11][8] = 0;
+}
+
 uso_change(USO_Booled);
 
 }

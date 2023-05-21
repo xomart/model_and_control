@@ -284,3 +284,10 @@ dpo_v_pr[19]=0;  dpo_v_pr[20]=0;
 
 
 
+void __fastcall TInstructorFormat_FRM::Button1Click(TObject *Sender)
+{
+double dva = StrToFloat(Edit1->Text);
+double dvb = dva/0.04;
+}
+//---------------------------------------------------------------------------
+

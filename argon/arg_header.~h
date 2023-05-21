@@ -127,11 +127,13 @@ double Spr;  // Промах S
 
 double vbok;   //
 
-double rasp;   // Расход общий
-double rudkg;  // Топливо от РУД
-double ruokgx; // ROU x
-double ruokgy; // ROU y
-double ruokgz; // ROU z
+double rasp;     // Расход общий
+double rasp_skd; // Расход СКД
+double rasp_dpo; // Расход ДПО
+double rudkg;    // Топливо от РУД
+double ruokgx;   // ROU x
+double ruokgy;   // ROU y
+double ruokgz;   // ROU z
 
 double kvkg;   //
 
@@ -178,6 +180,7 @@ static unsigned short apdp; // argon pusk debug
 //\\\//\\\//\\\//\\\//\\\//\\\//\\\//\\\//\\\//\\\//\\\//\\\
 
 static AnsiString irvi_string = "              ";
+static AnsiString irvi_tstring = "              ";  //temp
 static AnsiString irvi_string_i[4];
 static bool irvi_err;
 

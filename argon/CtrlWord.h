@@ -19,17 +19,19 @@ static bool cw_b2[16];  //
 static bool cw_b6[16];  // 047
 static bool cw_b10[16]; // 050
 static bool cw_r1[16];  // 100
-static bool cw_r6[16];  //
+static bool cw_r6[16];  // 107
 static bool cw_r17[16]; // 274
+static bool cw_a1[16];  // 460
 static bool cw_a2[16];  // 051
 static bool cw_a3[16];  // 464
+static bool cw_A3[16];  // 437
 static bool cw_a4[16];  // 053
 static bool cw_a5[16];  // 054
 static bool cw_a6[16];  //
 static bool cw_a7[16];  //
 static bool cw_a8[16];  // 055
 static bool cw_a9[16];  // 470
-static bool cw_a10[16]; //
+static bool cw_a10[16]; // 471
 static bool cw_a11[16]; // 472
 static bool cw_a12[16]; // 473
 static bool cw_a13[16]; // 474
@@ -51,13 +53,13 @@ static bool cw_a33[16]; //
 static bool cw_a34[16]; // 1542
 static bool cw_a35[16]; // 250
 static bool cw_a40[16]; //
-static bool cw_c1[16];  //
+static bool cw_c1[16];  // 461
 static bool cw_c2[16];  // 463
 static bool cw_c3[16];  // 465
-static bool cw_c6[16];  //
+static bool cw_c6[16];  // 467
 static bool cw_c7[16];  //
 static bool cw_c8[16];  // 462
-static bool cw_c10[16]; //
+static bool cw_c10[16]; // 475
 
 static bool cw_x17[16]; // 273
 static bool cw_i17[16]; // 254
@@ -69,6 +71,9 @@ static bool cw_K3[16];   //
 static bool cw_K4[16];   //
 
 static bool cw_AC7[16];  //
+
+static bool cw_INST[35]; // Инструкции
+static bool cw_INST_temp[16]; // Temp
 
 static bool cw_TA1[16];  // 061 - Текущие Аварии
 static bool cw_SA[16];   // 060 - Срочные Аварии
@@ -96,7 +101,7 @@ static bool cw_KC3[16]; // 522
 static bool cw_Ta1[16]; // 500
 
 static bool ych_z1[16];   // ych - Ячейки
-static bool ych_POZ[16];
+static bool ych_POZ[16];  // Япоз
 static bool ych_Rg15[16]; // Яч Рг
 static bool ych_RrP[16];  // RrП
 
@@ -106,6 +111,7 @@ static bool Yz2[16];    // 402
 static bool Yz3[16];    // 404
 
 static bool Yrgp[16];   // 027
+static bool Ypop[16];   // Япоп
 
 static bool YzS1[16];   // Запросы (Нет в БЦВК)
 
@@ -205,7 +211,43 @@ Yz1[13] = 1 = ФИНТ
 15 - Засветка ИКВ-2 солнцем          * 15 -
 *****************************************************************************
 
+*****************************************************************************
+|               K3                   *               К1                     *
+*****************************************************************************
+0  -                                 * 0  -                           *
+1  -                                 * 1  -                      *
+2  -                                 * 2  -                     *
+3  -                                 * 3  -                  *
+4  - Включение режима стабилизации   * 4  -                                 *
+5  -                                 * 5  -         *
+6  -                                 * 6  -    *
+7  -                                 * 7  - Разворот                        *
+8  -                                 * 8  - Раскрутка                       *  БДУС
+9  -                                 * 9  - Раскрутка                       *
+10 -                                 * 10 -                *
+11 -                                 * 11 -                        *
+12 -                                 * 12 -                  *
+13 -                                 * 13 -      *
+14 -                                 * 14 - Выкл. СД                        *
+15 -                                 * 15 -
 
-
-
+*****************************************************************************
+|               K2                   *               К4                     *
+*****************************************************************************
+0  -                                 * 0  - Выбор БДУС-1                    *
+1  - Включение ИКВ-1                 * 1  - Выбор БДУС-1                    *
+2  -                                 * 2  -                     *
+3  -                                 * 3  -                  *
+4  -                                 * 4  -                                 *
+5  -                                 * 5  -         *
+6  - Выкл. ИКВ-2                     * 6  -    *
+7  -                                 * 7  - Разворот                        *
+8  -                                 * 8  -                      *
+9  -                                 * 9  -          *
+10 -                                 * 10 -                *
+11 -                                 * 11 -                        *
+12 -                                 * 12 -                  *
+13 -                                 * 13 -      *
+14 -                                 * 14 -            *
+15 -                                 * 15 -
 */

@@ -159,7 +159,7 @@ ych_Rg15[0]=0;
 // обработчик признака "Работа СКД"
 if(USO_Booled[10][10]) {
 if(skd_on_pr){
-JPS(2,is_miu,is_operator,"Работа СКД        ","ВКЛ");   // Надо выдавать один раз по факту
+JPS(2,is_miu+" ",is_operator.Delete(is_operator.Length(),1),"Работа СКД        ","ВКЛ");   // Надо выдавать один раз по факту
 work_st = true;
 SkdOnPr=true;                         // Признак "ВКЛ СКД"
 tk_mass = StrToFloat(Edit1->Text);    // Считываем Массу ТК

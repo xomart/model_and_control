@@ -1,6 +1,6 @@
 object InstructorFormat_FRM: TInstructorFormat_FRM
-  Left = 35
-  Top = 153
+  Left = 48
+  Top = 336
   Width = 934
   Height = 543
   Caption = #1048#1085#1089#1090#1088#1091#1082#1090#1086#1088#1089#1082#1080#1081' '#1092#1086#1088#1084#1072#1090
@@ -2107,11 +2107,36 @@ object InstructorFormat_FRM: TInstructorFormat_FRM
     ReadOnly = True
     TabOrder = 5
   end
+  object GroupBox10: TGroupBox
+    Left = 712
+    Top = 240
+    Width = 201
+    Height = 257
+    Caption = ' '#1056#1072#1089#1089#1095#1105#1090' '#1091#1089#1090#1072#1074#1086#1082' '
+    TabOrder = 6
+    object Edit1: TEdit
+      Left = 64
+      Top = 24
+      Width = 121
+      Height = 23
+      TabOrder = 0
+      Text = 'Edit1'
+    end
+    object Button1: TButton
+      Left = 104
+      Top = 80
+      Width = 75
+      Height = 25
+      Caption = 'Button1'
+      TabOrder = 1
+      OnClick = Button1Click
+    end
+  end
   object RU_pic: TImageList
     DrawingStyle = dsTransparent
     Masked = False
-    Left = 712
-    Top = 240
+    Left = 760
+    Top = 136
     Bitmap = {
       494C010101000400040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
@@ -2256,14 +2281,14 @@ object InstructorFormat_FRM: TInstructorFormat_FRM
     Enabled = False
     Interval = 25
     OnTimer = Timer1Timer
-    Left = 784
-    Top = 256
+    Left = 856
+    Top = 160
   end
   object Timer2: TTimer
     Interval = 200
     OnTimer = Timer2Timer
-    Left = 752
-    Top = 272
+    Left = 808
+    Top = 168
   end
   object Timer3: TTimer
     Left = 768

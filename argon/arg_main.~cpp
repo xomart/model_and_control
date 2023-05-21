@@ -11,10 +11,12 @@
 #include "neptun_main.h"
 #include "ssvp_module.h"
 #include "SPSHead.h"
+#include "ks020_model.h"
+#include "bfi_formats.h"
 /*
-   +--------------------------+
-   |   Модель БЦВК Аргон-16   |
-   +--------------------------+
+   +----------------------------------+
+   |   Модель БЦВК Аргон-16 (11М67)   |
+   +----------------------------------+
 
    Активируется при выдаче команды на включение БЦВК
 
@@ -139,10 +141,33 @@ cw_Y32[3] = false; // Включение ИКВ-2
 */
 
 void SetItvi (byte Mode, unsigned short Addr, unsigned short value, char z) {
-	irvi_string.SubString(1,2) = IntToStr(Mode).SubString(1,1);
-	irvi_string.SubString(3,5) = IntToStr(Addr);
-	irvi_string.SubString(8,7) = IntToStr(value);
-	irvi_string.SubString(15,1) = z;
+AnsiString tLe;
+	//irvi_string.SubString(1,2) = IntToStr(Mode).SubString(1,1);
+	//irvi_string.SubString(3,5) = IntToStr(Addr);
+	//irvi_string.SubString(8,7) = "1234567";//IntToStr(value);
+	//irvi_string.SubString(15,1) = z;
+        irvi_string = "";
+        int ale = 5 - IntToStr(Addr).Length();
+      //  for(int a; a = ale; a++) {
+        tLe.Insert("000",1);     // }
+        tLe.Insert(IntToStr(Addr),0);
+        JPS(1,"","","",tLe);
+        irvi_string.Insert(IntToStr(Mode).SubString(1,1),1);
+        irvi_string.Insert(IntToStr(Addr),3);
+        irvi_string.Insert(IntToStr(value),8);
+        irvi_string.Insert(z,15);
+}
+
+void AltSetIrvi(AnsiString Mode, AnsiString Addr, AnsiString value, AnsiString z){
+        irvi_string = "";
+ 	irvi_string.Insert(Mode,0);
+	irvi_string.Insert(Addr,3);
+	irvi_string.Insert(value,8);
+	irvi_string.Insert(z,15);
+}
+
+void SetValueToIrvi(){
+        irvi_tstring.SubString(8,7) = "432";
 }
 
 /*
@@ -184,13 +209,14 @@ switch (addr) {   // Обработчик режима
         case 50: cw_b10[val]=1; break;
         case 100: cw_r1[val]=1; break;
         case 107: cw_r6[val]=1; break;
+        case 274: cw_r17[val]=1; break;
         case 110: cw_a20[val]=1; break;
         case 111: cw_a21[val]=1; break;
         case 112: cw_a22[val]=1; break;
         case 246: cw_a30[val]=1; break;
         case 250: cw_a35[val]=1; break;
         case 277: cw_a19[val]=1; break;
-        default: JPS(3,is_miu,is_operator,"Нет такой буквы!",""); break; } }
+        default: JPS(3,is_miu+" ",is_operator.Delete(is_operator.Length(),1),"Нет такой буквы!",""); break; } }
 
 void mode_30 (int addr, int val){
 switch (addr) {   // Обработчик режима
@@ -205,7 +231,99 @@ switch (addr) {   // Обработчик режима
         case 246: cw_a30[val]=0; break;
         case 250: cw_a35[val]=0; break;
         case 277: cw_a19[val]=0; break;
-        default: JPS(3,is_miu,is_operator,"Нет такой буквы!",""); break; } }
+        default: JPS(3,is_miu+" ",is_operator.Delete(is_operator.Length(),1),"Нет такой буквы!",""); break; } }
+
+bool* cwn2addr(int addr){
+switch (addr) {
+        case 40: return cw_b1; break;
+        case 47: return cw_b6; break;
+        case 50: return cw_b10; break;
+        case 100: return cw_r1; break;
+        case 107: return cw_r6; break;
+        case 274: return cw_r17; break;
+        case 460: return cw_a1; break;
+        case 51: return cw_a2; break;
+        case 464: return cw_a3; break;
+        case 53: return cw_a4; break;
+        case 54: return cw_a5; break;
+        case 55: return cw_a8; break;
+        case 470: return cw_a9; break;
+        case 471: return cw_a10; break;
+        case 472: return cw_a11; break;
+        case 473: return cw_a12; break;
+        case 474: return cw_a13; break;
+        case 271: return cw_a14; break;
+        case 272: return cw_a16; break;
+        case 275: return cw_a18; break;
+        case 227: return cw_a19; break;
+        case 110: return cw_a20; break;
+        case 111: return cw_a21; break;
+        case 112: return cw_a22; break;
+        case 270: return cw_a23; break;
+        case 766: return cw_a24; break;
+        case 1540: return cw_a25; break;
+        case 1541: return cw_a26; break;
+        case 266: return cw_a27; break;
+        case 267: return cw_a28; break;
+        case 246: return cw_a30; break;
+        case 1542: return cw_a34; break;
+        case 250: return cw_a35; break;
+        case 461: return cw_c1; break;
+        case 463: return cw_c2; break;
+        case 465: return cw_c3; break;
+        case 467: return cw_c6; break;
+        case 462: return cw_c8; break;
+        case 475: return cw_c10; break;
+        case 273: return cw_x17; break;
+
+        default: JPS(3,is_miu+" ",is_operator.Delete(is_operator.Length(),1),"Ошибка ИРВИ",""); break;
+}
+}
+
+unsigned long boolArrayToBinary(const bool cw[], size_t size) {
+    unsigned long binary = 0;
+    for (size_t i = 0; i < size; ++i) {
+        binary |= (cw[i] << (size - 1 - i));
+    }
+    return binary;
+}
+
+AnsiString binaryToOctal(unsigned long binary) {
+    AnsiString octal = "";
+    unsigned long remainder;
+
+    while (binary > 0) {
+        remainder = binary % 8;
+        octal = IntToStr(remainder) + octal;
+        binary /= 8;
+    }
+
+    return octal;
+}
+
+AnsiString boolcwtostring(const bool cw[]) {
+    unsigned long binary = boolArrayToBinary(cw, 16);
+    if(binaryToOctal(binary).IsEmpty()) return "000000"; else
+    return binaryToOctal(binary);
+}
+
+void showvalueirvi(AnsiString val){
+irvi_string.SubString(1,1);
+irvi_string.SubString(2,1);
+irvi_string.SubString(3,1);
+irvi_string.SubString(4,1);
+irvi_string.SubString(5,1);
+irvi_string.SubString(6,1);
+irvi_string.SubString(7,1);
+irvi_string.SubString(8,1);
+irvi_string.SubString(9,1);
+irvi_string.SubString(10,1);
+irvi_string.SubString(11,1);
+irvi_string.SubString(12,1);
+irvi_string.SubString(13,1);
+irvi_string.SubString(14,1);
+irvi_string.SubString(15,1);
+}
 
 /*
    +--------------------------------------------+
@@ -214,31 +332,41 @@ switch (addr) {   // Обработчик режима
 */
 
 void ChekIrvi (AnsiString irvi_str){
-if(irvi_str.IsEmpty())JPS(3,is_miu,is_operator,"Пустой ввод!",""); else {
+if(irvi_str.IsEmpty())JPS(3,is_miu+" ",is_operator.Delete(is_operator.Length(),1),"Пустой ввод!",""); else {
 
 irvi_type.mode = StrToInt(irvi_str.SubString(1,2)); // Вырезаем первые два символа строки ирви "режим"
 switch (irvi_type.mode) {   // Обработчик режима
-        case 00: /* Приоритетный или принудительный режим выдачи пр-м 1 - 4 */ break;
+        case 00: /* Приоритетный или принудительный режим выдачи пр-м 1 - 4 */
+                 break;
         case 04: /* Динамический вывод 10-х чисел */ break;
         case 05: /* Динамический вывод 8-х чисел */ break;
         case 10: /* Ввод уставки РУС */   break;           // Arg addr RUS AUS data?
         case 11: /* Ввод уставки АУС 1-й группы */  break;
         case 12: /* Ввод уставки АУС 2-й группы */  break;
         case 14: /* Одиночный ввод 10-х чисел */                       // Если режим 14, то
-                 if((irvi_str.SubString(3,5)).IsEmpty())JPS(3,is_miu,is_operator,"Пустой адрес!",""); else {
+                 if((irvi_str.SubString(3,5)).IsEmpty())JPS(3,is_miu+" ",is_operator.Delete(is_operator.Length(),1),"Пустой адрес!",""); else {
                  irvi_type.addr = StrToInt(irvi_str.SubString(3,5));   // Присваиваем значение адреса
                  if(CorrectAddr(irvi_type.addr)) {                     // Проверяем корректность адреса, если корректен, то
-                 if((irvi_str.SubString(8,7)).IsEmpty())JPS(3,is_miu,is_operator,"Пустое число!",""); else {
+                 if((irvi_str.SubString(8,7)).IsEmpty())JPS(3,is_miu+" ",is_operator.Delete(is_operator.Length(),1),"Пустое число!",""); else {
                  irvi_type.value = StrToInt(irvi_str.SubString(8,7));  // Присваиваем значение
                  ArgonMemoryType[irvi_type.addr] = irvi_type.value;    // Записываем его в ячейку памяти Аргона
-                 SetItvi(irvi_type.mode,irvi_type.addr,ArgonMemoryType[irvi_type.addr], irvi_type.z );   // Выставляем результат на ИРВИ
+                 AltSetIrvi(irvi_str.SubString(1,2),irvi_str.SubString(3,5),FormatFloat("00000  ",ArgonMemoryType[irvi_type.addr]),irvi_type.z);
+                 //tItvi(irvi_type.mode,irvi_type.addr,ArgonMemoryType[irvi_type.addr], irvi_type.z );   // Выставляем результат на ИРВИ
                  JPS(4,is_argon,is_irvi,"Запись числа "+               // Логируем результат (от имени Аргона)
                  IntToStr(irvi_type.value)+" по адресу "+IntToStr(irvi_type.addr),"");}}
                  else {                                                 // Если адрес не корректен ,то
                  irvi_err = true;
                  JPS(3,is_argon,is_operator,arg_addr_error,"");     } }  // Логируем превышение допустимого значения памяти А16
                  break;
-        case 15: /* Одиночный ввод 8-х чисел */  break;
+        case 15: /* Одиночный ввод 8-х чисел */
+                 irvi_type.addr = StrToInt(irvi_str.SubString(3,5));
+                 if(CorrectAddr(irvi_type.addr)) {
+                 irvi_type.value = StrToInt(irvi_str.SubString(8,7));  // Присваиваем значение
+                 ArgonMemoryType[irvi_type.addr] = irvi_type.value;
+                 } else  {                                               // Если адрес не корректен ,то
+                 irvi_err = true;
+                 JPS(3,is_argon,is_operator,arg_addr_error,"");   }
+                  break;
         case 17: /* Групповой ввод 10-х чисел */ break;
         case 18: /* Групповой ввод 8-х чисел */
                 // irvi_type.addr = StrToInt(irvi_str.SubString(3,5));   // Присваиваем значение адреса
@@ -248,7 +376,10 @@ switch (irvi_type.mode) {   // Обработчик режима
                  //SetItvi(irvi_type.mode,(irvi_type.addr)+1,ArgonMemoryType[irvi_type.addr], irvi_type.z );   // Выставляем результат на ИРВИ
                  //mode18act=true;
                  break;
-        case 21: /* Вывод уставки АУС 1-й группы */ break;
+        case 21: /* Вывод уставки АУС 1-й группы */
+                 //An
+                 AltSetIrvi("21","     ","1234567"," ");
+                 break;
         case 22: /* Вывод уставки АУС 2-й группы */ break;
         case 24: /* Одиночный вывод 10-х чисел */                      // Если режим 24, то
                  irvi_type.addr = StrToInt(irvi_str.SubString(3,5));   // Присваиваем значение адреса временной переменной
@@ -258,7 +389,20 @@ switch (irvi_type.mode) {   // Обработчик режима
                  irvi_err = true;
                  JPS(3,is_argon,is_operator,arg_addr_error,"");   }     // Логируем превышение допустимого значения памяти А16
                  break;
-        case 25: /* Одиночный вывод 8-х чисел */ break;
+        case 25: /* Одиночный вывод 8-х чисел */
+                 irvi_type.addr = StrToInt(irvi_str.SubString(3,5));   // Присваиваем значение адреса временной переменной
+                 if(CorrectAddr(irvi_type.addr)) {                     // Проверяем корректность адреса, если корректен, то
+                 //irvi_type.value = StrToInt();
+                 //AltSetIrvi(irvi_type.mode,irvi_type.addr,"5647765", irvi_type.z );    // Выставляем результат на ИРВИ
+                 AnsiString valt = boolcwtostring(cwn2addr(irvi_type.addr));
+                 //ArgonMemoryType[irvi_type.addr] = StrToInt(valt);
+                 valt.Insert(" ",0);
+                 AltSetIrvi(irvi_str.SubString(1,2),irvi_str.SubString(3,5),valt, irvi_type.z );
+                 JPS(1,IntToStr(irvi_type.mode),IntToStr(irvi_type.addr),IntToStr(irvi_type.value),irvi_type.mode);
+                 }   else   {                                               // Если адрес не корректен ,то
+                 irvi_err = true;
+                 JPS(3,is_argon,is_operator,arg_addr_error,"");   }     // Логируем превышение допустимого значения памяти А16
+                 break;
         case 27: /* Групповой вывод 10-х чисел */ break;
         case 28: /* Групповой вывод 8-х чисел  */break;
         case 30: /* Изменение состояния признака в слове - запись единицы */
@@ -280,23 +424,85 @@ switch (irvi_type.mode) {   // Обработчик режима
                  JPS(3,is_argon,is_operator,arg_addr_error,"");   }    // Логируем превышение допустимого значения памяти А16
                  break;
         case 40: /*  */ break;
-        case 41: /*  */ break;
-        case 42: /*  */ break;
-        case 43: /*  */ break;
-        case 44: /*  */ break;
-        case 45: /*  */ break;
-        case 46: /*  */ break;
-        case 48: /* Сверка времени */
-        break;
+        case 41: /*  */
+                 CurDispNum = 1;
+                 AltSetIrvi("40","","","");break;
+        case 42: /*  */
+                 CurDispNum = 2;
+                 AltSetIrvi("40","","","");break;
+        case 43: /*  */
+                 CurDispNum = 3;
+                 AltSetIrvi("40","","","");break;
+        case 44: /*  */
+                 CurDispNum = 4;
+                 AltSetIrvi("40","","","");
+                 break;
+        case 45: /*  */
+                 CurDispNum = 5;
+                 AltSetIrvi("40","","","");
+                 break;
+        case 46: /*  */
+                 CurDispNum = 6;
+                 AltSetIrvi("40","","","");
+                 break;
+        case 47: /* Отбой программ дисплея */
+                 CurDispNum = 8;
+                 AltSetIrvi("40","","","");
+                 break;
+        case 48: /* Сверка времени */ break;
         default: irvi_err = true;       // Флаг ошибки (для индикации на ИРВИ)
                  JPS(3,is_argon,is_irvi,"АА","");        // Логируем ошибку о несуществующием режиме
                  irvi_a = 1;
-                 JPS(3,is_miu,is_operator,"Несуществующий режим!","");
-        irvi_type.addr = StrToInt(irvi_str.SubString(3,5));
-        irvi_type.value = StrToInt(irvi_str.SubString(8,7));
-
-        break;
+                 JPS(3,is_miu+" ",is_operator.Delete(is_operator.Length(),1),"Несуществующий режим!","");  break;
+        //irvi_type.addr = StrToInt(irvi_str.SubString(3,5));
+        //irvi_type.value = StrToInt(irvi_str.SubString(8,7));
 } }
+
+}
+
+void make_00061(){ // Формирование ячейки текущих аварий
+ AnsiString temp = "      ";
+
+}
+
+AnsiString instr_002(bool cw_INST[35]){
+if(cw_INST[1])  return "00001"; else
+if(cw_INST[2])  return "00010"; else
+if(cw_INST[3])  return "00011"; else
+if(cw_INST[4])  return "00100"; else
+if(cw_INST[5])  return "00101"; else
+if(cw_INST[6])  return "00110"; else
+if(cw_INST[7])  return "00111"; else
+if(cw_INST[8])  return "01000"; else
+if(cw_INST[9])  return "01001"; else
+if(cw_INST[10]) return "01010"; else
+if(cw_INST[11]) return "01011"; else
+if(cw_INST[12]) return "01100"; else
+//if(cw_INST[13]) return ""; else   // ТАК НАДО
+if(cw_INST[14]) return "01110"; else
+if(cw_INST[15]) return "01111"; else
+//if(cw_INST[16]) return ""; else
+//if(cw_INST[17]) return ""; else
+//if(cw_INST[18]) return ""; else
+//if(cw_INST[19]) return ""; else
+//if(cw_INST[20]) return ""; else
+if(cw_INST[21]) return "10001"; else
+if(cw_INST[22]) return "10010"; else
+if(cw_INST[23]) return "10011"; else
+if(cw_INST[24]) return "10100"; else
+if(cw_INST[25]) return "10101"; else
+if(cw_INST[26]) return "10110"; else
+if(cw_INST[27]) return "10111"; else
+if(cw_INST[28]) return "11000"; else
+if(cw_INST[29]) return "11001"; else
+//if(cw_INST[30]) return ""; else    // ТАК НАДО
+if(cw_INST[31]) return "11011"; else
+if(cw_INST[32]) return "11100"; else
+if(cw_INST[33]) return "11101"; else
+if(cw_INST[34]) return "11110"; else
+if(cw_INST[35]) return "11111";
+
+AnsiString temp_instr = "";
 
 }
 
@@ -405,8 +611,11 @@ JPS(1,is_argon,is_operator,"Самопроверка окончена. Значение tResult = "+IntToStr
           USO_Booled[11][7]=true;         // Выставляем "ОСК" для ТСЭ (от кого?)
          //---------//
          // П У Н У //
-         // Программа Установки Начальных Условий //
+         // Программа Установки Начальных Условий (ПУНУ) //
          //=======================================//
+
+
+
          }
     apdp=8;
 
@@ -424,6 +633,8 @@ i_ot_pusk++; // Счетчик тактов БЦВК
 // В СУД "Чайка-3" по началу каждого такта происходит самоконтроль (СК) - self_check
 
 // Блок Жесткой программы -
+
+if(cw_a5[2]||cw_a5[3]||cw_a5[6]||cw_a16[0]||cw_a16[2]) cw_a5[1]=1; else cw_a5[1]=0;   // Выставка обобщённого ГСО
 
 // Остальные блоки. СПС
 pres_alarm_st(TSpsDataN[19]); // Сверка давления (НЕ ДСД)
@@ -493,7 +704,7 @@ apdp=10;
         if(dynamics.Spr<=-0.02) {// Если нет промаха
                 prks=1;
                 apdp=11;
-                JPS(4,is_miu,is_operator,"Есть касание! Начало формирования протокола.","");
+                JPS(4,is_miu+" ",is_operator.Delete(is_operator.Length(),1),"Есть касание! Начало формирования протокола.","");
                 arg_work_pr=0;  }
 //rygim=0;
 }

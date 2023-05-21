@@ -1,6 +1,6 @@
 object UsoForm: TUsoForm
-  Left = 109
-  Top = 116
+  Left = 1207
+  Top = 427
   Width = 354
   Height = 421
   Caption = #1059#1057#1054
@@ -18,8 +18,8 @@ object UsoForm: TUsoForm
   object L00: TLabel
     Left = 8
     Top = 32
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '00.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -31,8 +31,8 @@ object UsoForm: TUsoForm
   object L01: TLabel
     Left = 8
     Top = 48
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '01.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -44,8 +44,8 @@ object UsoForm: TUsoForm
   object L02: TLabel
     Left = 8
     Top = 64
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '02.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -57,8 +57,8 @@ object UsoForm: TUsoForm
   object L03: TLabel
     Left = 8
     Top = 80
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '03.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -70,8 +70,8 @@ object UsoForm: TUsoForm
   object L04: TLabel
     Left = 8
     Top = 96
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '04.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -83,8 +83,8 @@ object UsoForm: TUsoForm
   object L05: TLabel
     Left = 8
     Top = 112
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '05.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -96,8 +96,8 @@ object UsoForm: TUsoForm
   object L06: TLabel
     Left = 8
     Top = 128
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '06.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -109,8 +109,8 @@ object UsoForm: TUsoForm
   object L07: TLabel
     Left = 8
     Top = 144
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '07.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -122,8 +122,8 @@ object UsoForm: TUsoForm
   object L08: TLabel
     Left = 8
     Top = 160
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '08.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -135,8 +135,8 @@ object UsoForm: TUsoForm
   object L: TLabel
     Left = 8
     Top = 176
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '09.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -148,8 +148,8 @@ object UsoForm: TUsoForm
   object Label11: TLabel
     Left = 8
     Top = 192
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '0A.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -161,8 +161,8 @@ object UsoForm: TUsoForm
   object Label12: TLabel
     Left = 8
     Top = 208
-    Width = 21
-    Height = 12
+    Width = 18
+    Height = 15
     Caption = '0B.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -174,8 +174,8 @@ object UsoForm: TUsoForm
   object Label13: TLabel
     Left = 8
     Top = 224
-    Width = 21
-    Height = 12
+    Width = 19
+    Height = 15
     Caption = '0C.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -187,8 +187,8 @@ object UsoForm: TUsoForm
   object Label14: TLabel
     Left = 8
     Top = 240
-    Width = 21
-    Height = 12
+    Width = 19
+    Height = 15
     Caption = '0D.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -200,8 +200,8 @@ object UsoForm: TUsoForm
   object Label15: TLabel
     Left = 8
     Top = 256
-    Width = 21
-    Height = 12
+    Width = 18
+    Height = 15
     Caption = '0E.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -213,8 +213,8 @@ object UsoForm: TUsoForm
   object Label16: TLabel
     Left = 8
     Top = 272
-    Width = 21
-    Height = 12
+    Width = 16
+    Height = 15
     Caption = '0F.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -226,8 +226,8 @@ object UsoForm: TUsoForm
   object Label17: TLabel
     Left = 8
     Top = 288
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '10.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -239,8 +239,8 @@ object UsoForm: TUsoForm
   object Label18: TLabel
     Left = 8
     Top = 304
-    Width = 21
-    Height = 12
+    Width = 16
+    Height = 15
     Caption = '11.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -252,8 +252,8 @@ object UsoForm: TUsoForm
   object Label19: TLabel
     Left = 8
     Top = 320
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '12.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -265,8 +265,8 @@ object UsoForm: TUsoForm
   object Label20: TLabel
     Left = 8
     Top = 336
-    Width = 21
-    Height = 12
+    Width = 17
+    Height = 15
     Caption = '13.'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -278,8 +278,8 @@ object UsoForm: TUsoForm
   object Label21: TLabel
     Left = 33
     Top = 16
-    Width = 32
-    Height = 12
+    Width = 29
+    Height = 15
     Caption = 'FEDC'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -291,8 +291,8 @@ object UsoForm: TUsoForm
   object Label42: TLabel
     Left = 73
     Top = 16
-    Width = 32
-    Height = 12
+    Width = 30
+    Height = 15
     Caption = 'BA98'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -304,8 +304,8 @@ object UsoForm: TUsoForm
   object Label63: TLabel
     Left = 113
     Top = 16
-    Width = 32
-    Height = 12
+    Width = 28
+    Height = 15
     Caption = '7654'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -317,8 +317,8 @@ object UsoForm: TUsoForm
   object Label84: TLabel
     Left = 153
     Top = 16
-    Width = 32
-    Height = 12
+    Width = 28
+    Height = 15
     Caption = '3210'
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -331,7 +331,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 32
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -344,7 +344,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 48
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -357,7 +357,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 64
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -370,7 +370,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 80
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -383,7 +383,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 96
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -396,7 +396,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 112
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -409,7 +409,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 128
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -422,7 +422,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 144
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -435,7 +435,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 160
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -448,7 +448,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 176
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -461,7 +461,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 192
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -474,7 +474,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 208
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -487,7 +487,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 224
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -500,7 +500,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 240
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -513,7 +513,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 256
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -526,7 +526,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 272
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -539,7 +539,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 288
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -552,7 +552,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 304
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -565,7 +565,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 320
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -578,7 +578,7 @@ object UsoForm: TUsoForm
     Left = 192
     Top = 336
     Width = 28
-    Height = 12
+    Height = 15
     Caption = '0000'
     Font.Charset = ANSI_CHARSET
     Font.Color = clYellow
@@ -590,8 +590,8 @@ object UsoForm: TUsoForm
   object i1: TLabel
     Left = 32
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -605,8 +605,8 @@ object UsoForm: TUsoForm
   object Label1: TLabel
     Left = 40
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -620,8 +620,8 @@ object UsoForm: TUsoForm
   object Label2: TLabel
     Left = 48
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -635,8 +635,8 @@ object UsoForm: TUsoForm
   object Label3: TLabel
     Left = 56
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -650,8 +650,8 @@ object UsoForm: TUsoForm
   object Label4: TLabel
     Left = 74
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -665,8 +665,8 @@ object UsoForm: TUsoForm
   object Label5: TLabel
     Left = 82
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -680,8 +680,8 @@ object UsoForm: TUsoForm
   object Label6: TLabel
     Left = 90
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -695,8 +695,8 @@ object UsoForm: TUsoForm
   object Label7: TLabel
     Left = 98
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -710,8 +710,8 @@ object UsoForm: TUsoForm
   object Label8: TLabel
     Left = 115
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -725,8 +725,8 @@ object UsoForm: TUsoForm
   object Label9: TLabel
     Left = 123
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -740,8 +740,8 @@ object UsoForm: TUsoForm
   object Label10: TLabel
     Left = 131
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -755,8 +755,8 @@ object UsoForm: TUsoForm
   object Label22: TLabel
     Left = 139
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -770,8 +770,8 @@ object UsoForm: TUsoForm
   object Label23: TLabel
     Left = 154
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -785,8 +785,8 @@ object UsoForm: TUsoForm
   object Label24: TLabel
     Left = 162
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -800,8 +800,8 @@ object UsoForm: TUsoForm
   object Label25: TLabel
     Left = 170
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -815,8 +815,8 @@ object UsoForm: TUsoForm
   object Label26: TLabel
     Left = 178
     Top = 32
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -830,8 +830,8 @@ object UsoForm: TUsoForm
   object Label27: TLabel
     Left = 32
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -845,8 +845,8 @@ object UsoForm: TUsoForm
   object Label28: TLabel
     Left = 40
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -860,8 +860,8 @@ object UsoForm: TUsoForm
   object Label29: TLabel
     Left = 48
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -875,8 +875,8 @@ object UsoForm: TUsoForm
   object Label30: TLabel
     Left = 56
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -890,8 +890,8 @@ object UsoForm: TUsoForm
   object Label31: TLabel
     Left = 74
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -905,8 +905,8 @@ object UsoForm: TUsoForm
   object Label32: TLabel
     Left = 82
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -920,8 +920,8 @@ object UsoForm: TUsoForm
   object Label33: TLabel
     Left = 90
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -935,8 +935,8 @@ object UsoForm: TUsoForm
   object Label34: TLabel
     Left = 98
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -950,8 +950,8 @@ object UsoForm: TUsoForm
   object Label35: TLabel
     Left = 115
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -965,8 +965,8 @@ object UsoForm: TUsoForm
   object Label36: TLabel
     Left = 123
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -980,8 +980,8 @@ object UsoForm: TUsoForm
   object Label37: TLabel
     Left = 131
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -995,8 +995,8 @@ object UsoForm: TUsoForm
   object Label38: TLabel
     Left = 139
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1010,8 +1010,8 @@ object UsoForm: TUsoForm
   object Label39: TLabel
     Left = 154
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1025,8 +1025,8 @@ object UsoForm: TUsoForm
   object Label40: TLabel
     Left = 162
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1040,8 +1040,8 @@ object UsoForm: TUsoForm
   object Label41: TLabel
     Left = 170
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1055,8 +1055,8 @@ object UsoForm: TUsoForm
   object Label43: TLabel
     Left = 178
     Top = 49
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1070,8 +1070,8 @@ object UsoForm: TUsoForm
   object Label44: TLabel
     Left = 32
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1085,8 +1085,8 @@ object UsoForm: TUsoForm
   object Label45: TLabel
     Left = 40
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1100,8 +1100,8 @@ object UsoForm: TUsoForm
   object Label46: TLabel
     Left = 48
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1115,8 +1115,8 @@ object UsoForm: TUsoForm
   object Label47: TLabel
     Left = 56
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1130,8 +1130,8 @@ object UsoForm: TUsoForm
   object Label48: TLabel
     Left = 74
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1145,8 +1145,8 @@ object UsoForm: TUsoForm
   object Label49: TLabel
     Left = 82
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1160,8 +1160,8 @@ object UsoForm: TUsoForm
   object Label50: TLabel
     Left = 90
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1175,8 +1175,8 @@ object UsoForm: TUsoForm
   object Label51: TLabel
     Left = 98
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1190,8 +1190,8 @@ object UsoForm: TUsoForm
   object Label52: TLabel
     Left = 115
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1205,8 +1205,8 @@ object UsoForm: TUsoForm
   object Label53: TLabel
     Left = 123
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1220,8 +1220,8 @@ object UsoForm: TUsoForm
   object Label54: TLabel
     Left = 131
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1235,8 +1235,8 @@ object UsoForm: TUsoForm
   object Label55: TLabel
     Left = 139
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1250,8 +1250,8 @@ object UsoForm: TUsoForm
   object Label56: TLabel
     Left = 154
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1265,8 +1265,8 @@ object UsoForm: TUsoForm
   object Label57: TLabel
     Left = 162
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1280,8 +1280,8 @@ object UsoForm: TUsoForm
   object Label58: TLabel
     Left = 170
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1295,8 +1295,8 @@ object UsoForm: TUsoForm
   object Label59: TLabel
     Left = 178
     Top = 65
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1310,8 +1310,8 @@ object UsoForm: TUsoForm
   object Label60: TLabel
     Left = 32
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1325,8 +1325,8 @@ object UsoForm: TUsoForm
   object Label61: TLabel
     Left = 40
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1340,8 +1340,8 @@ object UsoForm: TUsoForm
   object Label62: TLabel
     Left = 48
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1355,8 +1355,8 @@ object UsoForm: TUsoForm
   object Label64: TLabel
     Left = 56
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1370,8 +1370,8 @@ object UsoForm: TUsoForm
   object Label65: TLabel
     Left = 74
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1385,8 +1385,8 @@ object UsoForm: TUsoForm
   object Label66: TLabel
     Left = 82
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1400,8 +1400,8 @@ object UsoForm: TUsoForm
   object Label67: TLabel
     Left = 90
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1415,8 +1415,8 @@ object UsoForm: TUsoForm
   object Label68: TLabel
     Left = 98
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1430,8 +1430,8 @@ object UsoForm: TUsoForm
   object Label69: TLabel
     Left = 115
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1445,8 +1445,8 @@ object UsoForm: TUsoForm
   object Label70: TLabel
     Left = 123
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1460,8 +1460,8 @@ object UsoForm: TUsoForm
   object Label71: TLabel
     Left = 131
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1475,8 +1475,8 @@ object UsoForm: TUsoForm
   object Label72: TLabel
     Left = 139
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1490,8 +1490,8 @@ object UsoForm: TUsoForm
   object Label73: TLabel
     Left = 154
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1505,8 +1505,8 @@ object UsoForm: TUsoForm
   object Label74: TLabel
     Left = 162
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1520,8 +1520,8 @@ object UsoForm: TUsoForm
   object Label75: TLabel
     Left = 170
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1535,8 +1535,8 @@ object UsoForm: TUsoForm
   object Label76: TLabel
     Left = 178
     Top = 81
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1550,8 +1550,8 @@ object UsoForm: TUsoForm
   object Label77: TLabel
     Left = 32
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1565,8 +1565,8 @@ object UsoForm: TUsoForm
   object Label78: TLabel
     Left = 40
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1580,8 +1580,8 @@ object UsoForm: TUsoForm
   object Label79: TLabel
     Left = 48
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1595,8 +1595,8 @@ object UsoForm: TUsoForm
   object Label80: TLabel
     Left = 56
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1610,8 +1610,8 @@ object UsoForm: TUsoForm
   object Label81: TLabel
     Left = 74
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1625,8 +1625,8 @@ object UsoForm: TUsoForm
   object Label82: TLabel
     Left = 82
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1640,8 +1640,8 @@ object UsoForm: TUsoForm
   object Label83: TLabel
     Left = 90
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1655,8 +1655,8 @@ object UsoForm: TUsoForm
   object Label85: TLabel
     Left = 98
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1670,8 +1670,8 @@ object UsoForm: TUsoForm
   object Label86: TLabel
     Left = 115
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1685,8 +1685,8 @@ object UsoForm: TUsoForm
   object Label87: TLabel
     Left = 123
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1700,8 +1700,8 @@ object UsoForm: TUsoForm
   object Label88: TLabel
     Left = 131
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1715,8 +1715,8 @@ object UsoForm: TUsoForm
   object Label89: TLabel
     Left = 139
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1730,8 +1730,8 @@ object UsoForm: TUsoForm
   object Label90: TLabel
     Left = 154
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1745,8 +1745,8 @@ object UsoForm: TUsoForm
   object Label91: TLabel
     Left = 162
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1760,8 +1760,8 @@ object UsoForm: TUsoForm
   object Label92: TLabel
     Left = 170
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1775,8 +1775,8 @@ object UsoForm: TUsoForm
   object Label93: TLabel
     Left = 178
     Top = 97
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1790,8 +1790,8 @@ object UsoForm: TUsoForm
   object Label94: TLabel
     Left = 32
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1805,8 +1805,8 @@ object UsoForm: TUsoForm
   object Label95: TLabel
     Left = 40
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1820,8 +1820,8 @@ object UsoForm: TUsoForm
   object Label96: TLabel
     Left = 48
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1835,8 +1835,8 @@ object UsoForm: TUsoForm
   object Label97: TLabel
     Left = 56
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1850,8 +1850,8 @@ object UsoForm: TUsoForm
   object Label98: TLabel
     Left = 74
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1865,8 +1865,8 @@ object UsoForm: TUsoForm
   object Label99: TLabel
     Left = 82
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1880,8 +1880,8 @@ object UsoForm: TUsoForm
   object Label100: TLabel
     Left = 90
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1895,8 +1895,8 @@ object UsoForm: TUsoForm
   object Label101: TLabel
     Left = 98
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1910,8 +1910,8 @@ object UsoForm: TUsoForm
   object Label102: TLabel
     Left = 115
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1925,8 +1925,8 @@ object UsoForm: TUsoForm
   object Label103: TLabel
     Left = 123
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1940,8 +1940,8 @@ object UsoForm: TUsoForm
   object Label104: TLabel
     Left = 131
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1955,8 +1955,8 @@ object UsoForm: TUsoForm
   object Label125: TLabel
     Left = 139
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1970,8 +1970,8 @@ object UsoForm: TUsoForm
   object Label126: TLabel
     Left = 154
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -1985,8 +1985,8 @@ object UsoForm: TUsoForm
   object Label127: TLabel
     Left = 162
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2000,8 +2000,8 @@ object UsoForm: TUsoForm
   object Label128: TLabel
     Left = 170
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2015,8 +2015,8 @@ object UsoForm: TUsoForm
   object Label129: TLabel
     Left = 178
     Top = 113
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2030,8 +2030,8 @@ object UsoForm: TUsoForm
   object Label130: TLabel
     Left = 32
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2045,8 +2045,8 @@ object UsoForm: TUsoForm
   object Label131: TLabel
     Left = 40
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2060,8 +2060,8 @@ object UsoForm: TUsoForm
   object Label132: TLabel
     Left = 48
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2075,8 +2075,8 @@ object UsoForm: TUsoForm
   object Label133: TLabel
     Left = 56
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2090,8 +2090,8 @@ object UsoForm: TUsoForm
   object Label134: TLabel
     Left = 74
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2105,8 +2105,8 @@ object UsoForm: TUsoForm
   object Label135: TLabel
     Left = 82
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2120,8 +2120,8 @@ object UsoForm: TUsoForm
   object Label136: TLabel
     Left = 90
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2135,8 +2135,8 @@ object UsoForm: TUsoForm
   object Label137: TLabel
     Left = 98
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2150,8 +2150,8 @@ object UsoForm: TUsoForm
   object Label138: TLabel
     Left = 115
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2165,8 +2165,8 @@ object UsoForm: TUsoForm
   object Label139: TLabel
     Left = 123
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2180,8 +2180,8 @@ object UsoForm: TUsoForm
   object Label140: TLabel
     Left = 131
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2195,8 +2195,8 @@ object UsoForm: TUsoForm
   object Label141: TLabel
     Left = 139
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2210,8 +2210,8 @@ object UsoForm: TUsoForm
   object Label142: TLabel
     Left = 154
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2225,8 +2225,8 @@ object UsoForm: TUsoForm
   object Label143: TLabel
     Left = 162
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2240,8 +2240,8 @@ object UsoForm: TUsoForm
   object Label144: TLabel
     Left = 170
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2255,8 +2255,8 @@ object UsoForm: TUsoForm
   object Label145: TLabel
     Left = 178
     Top = 129
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2270,8 +2270,8 @@ object UsoForm: TUsoForm
   object Label146: TLabel
     Left = 32
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2285,8 +2285,8 @@ object UsoForm: TUsoForm
   object Label147: TLabel
     Left = 40
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2300,8 +2300,8 @@ object UsoForm: TUsoForm
   object Label148: TLabel
     Left = 48
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2315,8 +2315,8 @@ object UsoForm: TUsoForm
   object Label149: TLabel
     Left = 56
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2330,8 +2330,8 @@ object UsoForm: TUsoForm
   object Label150: TLabel
     Left = 74
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2345,8 +2345,8 @@ object UsoForm: TUsoForm
   object Label151: TLabel
     Left = 82
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2360,8 +2360,8 @@ object UsoForm: TUsoForm
   object Label152: TLabel
     Left = 90
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2375,8 +2375,8 @@ object UsoForm: TUsoForm
   object Label153: TLabel
     Left = 98
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2390,8 +2390,8 @@ object UsoForm: TUsoForm
   object Label154: TLabel
     Left = 115
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2405,8 +2405,8 @@ object UsoForm: TUsoForm
   object Label155: TLabel
     Left = 123
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2420,8 +2420,8 @@ object UsoForm: TUsoForm
   object Label156: TLabel
     Left = 131
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2435,8 +2435,8 @@ object UsoForm: TUsoForm
   object Label157: TLabel
     Left = 139
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2450,8 +2450,8 @@ object UsoForm: TUsoForm
   object Label158: TLabel
     Left = 154
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2465,8 +2465,8 @@ object UsoForm: TUsoForm
   object Label159: TLabel
     Left = 162
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2480,8 +2480,8 @@ object UsoForm: TUsoForm
   object Label160: TLabel
     Left = 170
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2495,8 +2495,8 @@ object UsoForm: TUsoForm
   object Label161: TLabel
     Left = 178
     Top = 145
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2510,8 +2510,8 @@ object UsoForm: TUsoForm
   object Label162: TLabel
     Left = 32
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2525,8 +2525,8 @@ object UsoForm: TUsoForm
   object Label163: TLabel
     Left = 40
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2540,8 +2540,8 @@ object UsoForm: TUsoForm
   object Label164: TLabel
     Left = 48
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2555,8 +2555,8 @@ object UsoForm: TUsoForm
   object Label165: TLabel
     Left = 56
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2570,8 +2570,8 @@ object UsoForm: TUsoForm
   object Label166: TLabel
     Left = 74
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2585,8 +2585,8 @@ object UsoForm: TUsoForm
   object Label167: TLabel
     Left = 82
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2600,8 +2600,8 @@ object UsoForm: TUsoForm
   object Label168: TLabel
     Left = 90
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2615,8 +2615,8 @@ object UsoForm: TUsoForm
   object Label169: TLabel
     Left = 98
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2630,8 +2630,8 @@ object UsoForm: TUsoForm
   object Label170: TLabel
     Left = 115
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2645,8 +2645,8 @@ object UsoForm: TUsoForm
   object Label171: TLabel
     Left = 123
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2660,8 +2660,8 @@ object UsoForm: TUsoForm
   object Label172: TLabel
     Left = 131
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2675,8 +2675,8 @@ object UsoForm: TUsoForm
   object Label173: TLabel
     Left = 139
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2690,8 +2690,8 @@ object UsoForm: TUsoForm
   object Label174: TLabel
     Left = 154
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2705,8 +2705,8 @@ object UsoForm: TUsoForm
   object Label175: TLabel
     Left = 162
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2720,8 +2720,8 @@ object UsoForm: TUsoForm
   object Label176: TLabel
     Left = 170
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2735,8 +2735,8 @@ object UsoForm: TUsoForm
   object Label177: TLabel
     Left = 178
     Top = 161
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2750,8 +2750,8 @@ object UsoForm: TUsoForm
   object Label178: TLabel
     Left = 32
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2765,8 +2765,8 @@ object UsoForm: TUsoForm
   object Label179: TLabel
     Left = 40
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2780,8 +2780,8 @@ object UsoForm: TUsoForm
   object Label180: TLabel
     Left = 48
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2795,8 +2795,8 @@ object UsoForm: TUsoForm
   object Label181: TLabel
     Left = 56
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2810,8 +2810,8 @@ object UsoForm: TUsoForm
   object Label182: TLabel
     Left = 74
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2825,8 +2825,8 @@ object UsoForm: TUsoForm
   object Label183: TLabel
     Left = 82
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2840,8 +2840,8 @@ object UsoForm: TUsoForm
   object Label184: TLabel
     Left = 90
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2855,8 +2855,8 @@ object UsoForm: TUsoForm
   object Label185: TLabel
     Left = 98
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2870,8 +2870,8 @@ object UsoForm: TUsoForm
   object Label186: TLabel
     Left = 115
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2885,8 +2885,8 @@ object UsoForm: TUsoForm
   object Label187: TLabel
     Left = 123
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2900,8 +2900,8 @@ object UsoForm: TUsoForm
   object Label188: TLabel
     Left = 131
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2915,8 +2915,8 @@ object UsoForm: TUsoForm
   object Label189: TLabel
     Left = 139
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2930,8 +2930,8 @@ object UsoForm: TUsoForm
   object Label190: TLabel
     Left = 154
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2945,8 +2945,8 @@ object UsoForm: TUsoForm
   object Label191: TLabel
     Left = 162
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2960,8 +2960,8 @@ object UsoForm: TUsoForm
   object Label192: TLabel
     Left = 170
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2975,8 +2975,8 @@ object UsoForm: TUsoForm
   object Label193: TLabel
     Left = 178
     Top = 177
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -2990,8 +2990,8 @@ object UsoForm: TUsoForm
   object Label194: TLabel
     Left = 32
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3005,8 +3005,8 @@ object UsoForm: TUsoForm
   object Label195: TLabel
     Left = 40
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3020,8 +3020,8 @@ object UsoForm: TUsoForm
   object Label196: TLabel
     Left = 48
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3035,8 +3035,8 @@ object UsoForm: TUsoForm
   object Label197: TLabel
     Left = 56
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3050,8 +3050,8 @@ object UsoForm: TUsoForm
   object Label198: TLabel
     Left = 74
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3065,8 +3065,8 @@ object UsoForm: TUsoForm
   object Label199: TLabel
     Left = 82
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3080,8 +3080,8 @@ object UsoForm: TUsoForm
   object Label200: TLabel
     Left = 90
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3095,8 +3095,8 @@ object UsoForm: TUsoForm
   object Label201: TLabel
     Left = 98
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3110,8 +3110,8 @@ object UsoForm: TUsoForm
   object Label202: TLabel
     Left = 115
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3125,8 +3125,8 @@ object UsoForm: TUsoForm
   object Label203: TLabel
     Left = 123
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3140,8 +3140,8 @@ object UsoForm: TUsoForm
   object Label204: TLabel
     Left = 131
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3155,8 +3155,8 @@ object UsoForm: TUsoForm
   object Label205: TLabel
     Left = 139
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3170,8 +3170,8 @@ object UsoForm: TUsoForm
   object Label206: TLabel
     Left = 154
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3185,8 +3185,8 @@ object UsoForm: TUsoForm
   object Label207: TLabel
     Left = 162
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3200,8 +3200,8 @@ object UsoForm: TUsoForm
   object Label208: TLabel
     Left = 170
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3215,8 +3215,8 @@ object UsoForm: TUsoForm
   object Label209: TLabel
     Left = 178
     Top = 193
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3230,8 +3230,8 @@ object UsoForm: TUsoForm
   object Label210: TLabel
     Left = 32
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3245,8 +3245,8 @@ object UsoForm: TUsoForm
   object Label211: TLabel
     Left = 40
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3260,8 +3260,8 @@ object UsoForm: TUsoForm
   object Label212: TLabel
     Left = 48
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3275,8 +3275,8 @@ object UsoForm: TUsoForm
   object Label213: TLabel
     Left = 56
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3290,8 +3290,8 @@ object UsoForm: TUsoForm
   object Label214: TLabel
     Left = 74
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3305,8 +3305,8 @@ object UsoForm: TUsoForm
   object Label215: TLabel
     Left = 82
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3320,8 +3320,8 @@ object UsoForm: TUsoForm
   object Label216: TLabel
     Left = 90
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3335,8 +3335,8 @@ object UsoForm: TUsoForm
   object Label217: TLabel
     Left = 98
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3350,8 +3350,8 @@ object UsoForm: TUsoForm
   object Label218: TLabel
     Left = 115
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3365,8 +3365,8 @@ object UsoForm: TUsoForm
   object Label219: TLabel
     Left = 123
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3380,8 +3380,8 @@ object UsoForm: TUsoForm
   object Label220: TLabel
     Left = 131
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3395,8 +3395,8 @@ object UsoForm: TUsoForm
   object Label221: TLabel
     Left = 139
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3410,8 +3410,8 @@ object UsoForm: TUsoForm
   object Label222: TLabel
     Left = 154
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3425,8 +3425,8 @@ object UsoForm: TUsoForm
   object Label223: TLabel
     Left = 162
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3440,8 +3440,8 @@ object UsoForm: TUsoForm
   object Label224: TLabel
     Left = 170
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3455,8 +3455,8 @@ object UsoForm: TUsoForm
   object Label225: TLabel
     Left = 178
     Top = 209
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3470,8 +3470,8 @@ object UsoForm: TUsoForm
   object Label226: TLabel
     Left = 32
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3485,8 +3485,8 @@ object UsoForm: TUsoForm
   object Label227: TLabel
     Left = 40
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3500,8 +3500,8 @@ object UsoForm: TUsoForm
   object Label228: TLabel
     Left = 48
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3515,8 +3515,8 @@ object UsoForm: TUsoForm
   object Label229: TLabel
     Left = 56
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3530,8 +3530,8 @@ object UsoForm: TUsoForm
   object Label230: TLabel
     Left = 74
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3545,8 +3545,8 @@ object UsoForm: TUsoForm
   object Label231: TLabel
     Left = 82
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3560,8 +3560,8 @@ object UsoForm: TUsoForm
   object Label232: TLabel
     Left = 90
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3575,8 +3575,8 @@ object UsoForm: TUsoForm
   object Label233: TLabel
     Left = 98
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3590,8 +3590,8 @@ object UsoForm: TUsoForm
   object Label234: TLabel
     Left = 115
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3605,8 +3605,8 @@ object UsoForm: TUsoForm
   object Label235: TLabel
     Left = 123
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3620,8 +3620,8 @@ object UsoForm: TUsoForm
   object Label236: TLabel
     Left = 131
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3635,8 +3635,8 @@ object UsoForm: TUsoForm
   object Label237: TLabel
     Left = 139
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3650,8 +3650,8 @@ object UsoForm: TUsoForm
   object Label238: TLabel
     Left = 154
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3665,8 +3665,8 @@ object UsoForm: TUsoForm
   object Label239: TLabel
     Left = 162
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3680,8 +3680,8 @@ object UsoForm: TUsoForm
   object Label240: TLabel
     Left = 170
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3695,8 +3695,8 @@ object UsoForm: TUsoForm
   object Label241: TLabel
     Left = 178
     Top = 225
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3710,8 +3710,8 @@ object UsoForm: TUsoForm
   object Label242: TLabel
     Left = 32
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3725,8 +3725,8 @@ object UsoForm: TUsoForm
   object Label243: TLabel
     Left = 40
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3740,8 +3740,8 @@ object UsoForm: TUsoForm
   object Label244: TLabel
     Left = 48
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3755,8 +3755,8 @@ object UsoForm: TUsoForm
   object Label245: TLabel
     Left = 56
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3770,8 +3770,8 @@ object UsoForm: TUsoForm
   object Label246: TLabel
     Left = 74
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3785,8 +3785,8 @@ object UsoForm: TUsoForm
   object Label247: TLabel
     Left = 82
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3800,8 +3800,8 @@ object UsoForm: TUsoForm
   object Label248: TLabel
     Left = 90
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3815,8 +3815,8 @@ object UsoForm: TUsoForm
   object Label249: TLabel
     Left = 98
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3830,8 +3830,8 @@ object UsoForm: TUsoForm
   object Label250: TLabel
     Left = 115
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3845,8 +3845,8 @@ object UsoForm: TUsoForm
   object Label251: TLabel
     Left = 123
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3860,8 +3860,8 @@ object UsoForm: TUsoForm
   object Label252: TLabel
     Left = 131
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3875,8 +3875,8 @@ object UsoForm: TUsoForm
   object Label253: TLabel
     Left = 139
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3890,8 +3890,8 @@ object UsoForm: TUsoForm
   object Label254: TLabel
     Left = 154
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3905,8 +3905,8 @@ object UsoForm: TUsoForm
   object Label255: TLabel
     Left = 162
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3920,8 +3920,8 @@ object UsoForm: TUsoForm
   object Label256: TLabel
     Left = 170
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3935,8 +3935,8 @@ object UsoForm: TUsoForm
   object Label257: TLabel
     Left = 178
     Top = 241
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3950,8 +3950,8 @@ object UsoForm: TUsoForm
   object Label258: TLabel
     Left = 32
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3965,8 +3965,8 @@ object UsoForm: TUsoForm
   object Label259: TLabel
     Left = 40
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3980,8 +3980,8 @@ object UsoForm: TUsoForm
   object Label260: TLabel
     Left = 48
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -3995,8 +3995,8 @@ object UsoForm: TUsoForm
   object Label261: TLabel
     Left = 56
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4010,8 +4010,8 @@ object UsoForm: TUsoForm
   object Label262: TLabel
     Left = 74
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4025,8 +4025,8 @@ object UsoForm: TUsoForm
   object Label263: TLabel
     Left = 82
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4040,8 +4040,8 @@ object UsoForm: TUsoForm
   object Label264: TLabel
     Left = 90
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4055,8 +4055,8 @@ object UsoForm: TUsoForm
   object Label265: TLabel
     Left = 98
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4070,8 +4070,8 @@ object UsoForm: TUsoForm
   object Label266: TLabel
     Left = 115
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4085,8 +4085,8 @@ object UsoForm: TUsoForm
   object Label267: TLabel
     Left = 123
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4100,8 +4100,8 @@ object UsoForm: TUsoForm
   object Label268: TLabel
     Left = 131
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4115,8 +4115,8 @@ object UsoForm: TUsoForm
   object Label269: TLabel
     Left = 139
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4130,8 +4130,8 @@ object UsoForm: TUsoForm
   object Label270: TLabel
     Left = 154
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4145,8 +4145,8 @@ object UsoForm: TUsoForm
   object Label271: TLabel
     Left = 162
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4160,8 +4160,8 @@ object UsoForm: TUsoForm
   object Label272: TLabel
     Left = 170
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4175,8 +4175,8 @@ object UsoForm: TUsoForm
   object Label273: TLabel
     Left = 178
     Top = 257
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4190,8 +4190,8 @@ object UsoForm: TUsoForm
   object Label274: TLabel
     Left = 32
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4205,8 +4205,8 @@ object UsoForm: TUsoForm
   object Label275: TLabel
     Left = 40
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4220,8 +4220,8 @@ object UsoForm: TUsoForm
   object Label276: TLabel
     Left = 48
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4235,8 +4235,8 @@ object UsoForm: TUsoForm
   object Label277: TLabel
     Left = 56
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4250,8 +4250,8 @@ object UsoForm: TUsoForm
   object Label278: TLabel
     Left = 74
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4265,8 +4265,8 @@ object UsoForm: TUsoForm
   object Label279: TLabel
     Left = 82
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4280,8 +4280,8 @@ object UsoForm: TUsoForm
   object Label280: TLabel
     Left = 90
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4295,8 +4295,8 @@ object UsoForm: TUsoForm
   object Label281: TLabel
     Left = 98
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4310,8 +4310,8 @@ object UsoForm: TUsoForm
   object Label282: TLabel
     Left = 115
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4325,8 +4325,8 @@ object UsoForm: TUsoForm
   object Label283: TLabel
     Left = 123
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4340,8 +4340,8 @@ object UsoForm: TUsoForm
   object Label284: TLabel
     Left = 131
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4355,8 +4355,8 @@ object UsoForm: TUsoForm
   object Label285: TLabel
     Left = 139
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4370,8 +4370,8 @@ object UsoForm: TUsoForm
   object Label286: TLabel
     Left = 154
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4385,8 +4385,8 @@ object UsoForm: TUsoForm
   object Label287: TLabel
     Left = 162
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4400,8 +4400,8 @@ object UsoForm: TUsoForm
   object Label288: TLabel
     Left = 170
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4415,8 +4415,8 @@ object UsoForm: TUsoForm
   object Label289: TLabel
     Left = 178
     Top = 273
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4430,8 +4430,8 @@ object UsoForm: TUsoForm
   object Label290: TLabel
     Left = 32
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4445,8 +4445,8 @@ object UsoForm: TUsoForm
   object Label291: TLabel
     Left = 40
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4460,8 +4460,8 @@ object UsoForm: TUsoForm
   object Label292: TLabel
     Left = 48
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4475,8 +4475,8 @@ object UsoForm: TUsoForm
   object Label293: TLabel
     Left = 56
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4490,8 +4490,8 @@ object UsoForm: TUsoForm
   object Label294: TLabel
     Left = 74
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4505,8 +4505,8 @@ object UsoForm: TUsoForm
   object Label295: TLabel
     Left = 82
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4520,8 +4520,8 @@ object UsoForm: TUsoForm
   object Label296: TLabel
     Left = 90
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4535,8 +4535,8 @@ object UsoForm: TUsoForm
   object Label297: TLabel
     Left = 98
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4550,8 +4550,8 @@ object UsoForm: TUsoForm
   object Label298: TLabel
     Left = 115
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4565,8 +4565,8 @@ object UsoForm: TUsoForm
   object Label299: TLabel
     Left = 123
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4580,8 +4580,8 @@ object UsoForm: TUsoForm
   object Label300: TLabel
     Left = 131
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4595,8 +4595,8 @@ object UsoForm: TUsoForm
   object Label301: TLabel
     Left = 139
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4610,8 +4610,8 @@ object UsoForm: TUsoForm
   object Label302: TLabel
     Left = 154
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4625,8 +4625,8 @@ object UsoForm: TUsoForm
   object Label303: TLabel
     Left = 162
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4640,8 +4640,8 @@ object UsoForm: TUsoForm
   object Label304: TLabel
     Left = 170
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4655,8 +4655,8 @@ object UsoForm: TUsoForm
   object Label305: TLabel
     Left = 178
     Top = 289
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4670,8 +4670,8 @@ object UsoForm: TUsoForm
   object Label306: TLabel
     Left = 32
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4685,8 +4685,8 @@ object UsoForm: TUsoForm
   object Label307: TLabel
     Left = 40
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4700,8 +4700,8 @@ object UsoForm: TUsoForm
   object Label308: TLabel
     Left = 48
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4715,8 +4715,8 @@ object UsoForm: TUsoForm
   object Label309: TLabel
     Left = 56
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4730,8 +4730,8 @@ object UsoForm: TUsoForm
   object Label310: TLabel
     Left = 74
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4745,8 +4745,8 @@ object UsoForm: TUsoForm
   object Label311: TLabel
     Left = 82
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4760,8 +4760,8 @@ object UsoForm: TUsoForm
   object Label312: TLabel
     Left = 90
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4775,8 +4775,8 @@ object UsoForm: TUsoForm
   object Label313: TLabel
     Left = 98
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4790,8 +4790,8 @@ object UsoForm: TUsoForm
   object Label314: TLabel
     Left = 115
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4805,8 +4805,8 @@ object UsoForm: TUsoForm
   object Label315: TLabel
     Left = 123
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4820,8 +4820,8 @@ object UsoForm: TUsoForm
   object Label316: TLabel
     Left = 131
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4835,8 +4835,8 @@ object UsoForm: TUsoForm
   object Label317: TLabel
     Left = 139
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4850,8 +4850,8 @@ object UsoForm: TUsoForm
   object Label318: TLabel
     Left = 154
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4865,8 +4865,8 @@ object UsoForm: TUsoForm
   object Label319: TLabel
     Left = 162
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4880,8 +4880,8 @@ object UsoForm: TUsoForm
   object Label320: TLabel
     Left = 170
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4895,8 +4895,8 @@ object UsoForm: TUsoForm
   object Label321: TLabel
     Left = 178
     Top = 305
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4910,8 +4910,8 @@ object UsoForm: TUsoForm
   object Label322: TLabel
     Left = 32
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4925,8 +4925,8 @@ object UsoForm: TUsoForm
   object Label323: TLabel
     Left = 40
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4940,8 +4940,8 @@ object UsoForm: TUsoForm
   object Label324: TLabel
     Left = 48
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4955,8 +4955,8 @@ object UsoForm: TUsoForm
   object Label325: TLabel
     Left = 56
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4970,8 +4970,8 @@ object UsoForm: TUsoForm
   object Label326: TLabel
     Left = 74
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -4985,8 +4985,8 @@ object UsoForm: TUsoForm
   object Label327: TLabel
     Left = 82
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5000,8 +5000,8 @@ object UsoForm: TUsoForm
   object Label328: TLabel
     Left = 90
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5015,8 +5015,8 @@ object UsoForm: TUsoForm
   object Label329: TLabel
     Left = 98
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5030,8 +5030,8 @@ object UsoForm: TUsoForm
   object Label330: TLabel
     Left = 115
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5045,8 +5045,8 @@ object UsoForm: TUsoForm
   object Label331: TLabel
     Left = 123
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5060,8 +5060,8 @@ object UsoForm: TUsoForm
   object Label332: TLabel
     Left = 131
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5075,8 +5075,8 @@ object UsoForm: TUsoForm
   object Label333: TLabel
     Left = 139
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5090,8 +5090,8 @@ object UsoForm: TUsoForm
   object Label334: TLabel
     Left = 154
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5105,8 +5105,8 @@ object UsoForm: TUsoForm
   object Label335: TLabel
     Left = 162
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5120,8 +5120,8 @@ object UsoForm: TUsoForm
   object Label336: TLabel
     Left = 170
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5135,8 +5135,8 @@ object UsoForm: TUsoForm
   object Label337: TLabel
     Left = 178
     Top = 321
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5150,8 +5150,8 @@ object UsoForm: TUsoForm
   object Label338: TLabel
     Left = 32
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5165,8 +5165,8 @@ object UsoForm: TUsoForm
   object Label339: TLabel
     Left = 40
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5180,8 +5180,8 @@ object UsoForm: TUsoForm
   object Label340: TLabel
     Left = 48
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5195,8 +5195,8 @@ object UsoForm: TUsoForm
   object Label341: TLabel
     Left = 56
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5210,8 +5210,8 @@ object UsoForm: TUsoForm
   object Label342: TLabel
     Left = 74
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5225,8 +5225,8 @@ object UsoForm: TUsoForm
   object Label343: TLabel
     Left = 82
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5240,8 +5240,8 @@ object UsoForm: TUsoForm
   object Label344: TLabel
     Left = 90
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5255,8 +5255,8 @@ object UsoForm: TUsoForm
   object Label345: TLabel
     Left = 98
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5270,8 +5270,8 @@ object UsoForm: TUsoForm
   object Label346: TLabel
     Left = 115
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5285,8 +5285,8 @@ object UsoForm: TUsoForm
   object Label347: TLabel
     Left = 123
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5300,8 +5300,8 @@ object UsoForm: TUsoForm
   object Label348: TLabel
     Left = 131
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5315,8 +5315,8 @@ object UsoForm: TUsoForm
   object Label349: TLabel
     Left = 139
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5330,8 +5330,8 @@ object UsoForm: TUsoForm
   object Label350: TLabel
     Left = 154
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5345,8 +5345,8 @@ object UsoForm: TUsoForm
   object Label351: TLabel
     Left = 162
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5360,8 +5360,8 @@ object UsoForm: TUsoForm
   object Label352: TLabel
     Left = 170
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5375,8 +5375,8 @@ object UsoForm: TUsoForm
   object Label353: TLabel
     Left = 178
     Top = 337
-    Width = 8
-    Height = 12
+    Width = 3
+    Height = 15
     Caption = '.'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5403,8 +5403,8 @@ object UsoForm: TUsoForm
   object Label357: TLabel
     Left = 42
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5418,8 +5418,8 @@ object UsoForm: TUsoForm
   object Label358: TLabel
     Left = 50
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5433,8 +5433,8 @@ object UsoForm: TUsoForm
   object Label359: TLabel
     Left = 58
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5448,8 +5448,8 @@ object UsoForm: TUsoForm
   object Label360: TLabel
     Left = 66
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5463,8 +5463,8 @@ object UsoForm: TUsoForm
   object Label361: TLabel
     Left = 74
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5478,8 +5478,8 @@ object UsoForm: TUsoForm
   object Label362: TLabel
     Left = 82
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5493,8 +5493,8 @@ object UsoForm: TUsoForm
   object Label363: TLabel
     Left = 90
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5508,8 +5508,8 @@ object UsoForm: TUsoForm
   object Label364: TLabel
     Left = 105
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5523,8 +5523,8 @@ object UsoForm: TUsoForm
   object Label365: TLabel
     Left = 113
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5538,8 +5538,8 @@ object UsoForm: TUsoForm
   object Label366: TLabel
     Left = 121
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5553,8 +5553,8 @@ object UsoForm: TUsoForm
   object Label367: TLabel
     Left = 129
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5568,8 +5568,8 @@ object UsoForm: TUsoForm
   object Label368: TLabel
     Left = 137
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5583,8 +5583,8 @@ object UsoForm: TUsoForm
   object Label369: TLabel
     Left = 145
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
@@ -5598,8 +5598,8 @@ object UsoForm: TUsoForm
   object Label370: TLabel
     Left = 153
     Top = 355
-    Width = 8
-    Height = 12
+    Width = 7
+    Height = 15
     Caption = '_'
     Color = clBackground
     Font.Charset = ANSI_CHARSET

@@ -8,6 +8,7 @@
 #include "arg_header.h"
 #include "CtrlWord.h"    // Управляющие слова Аргона
 #include "JouHeader.h"   // Заголовок для журнала
+#include "arg_main.cpp"
 
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -228,6 +229,91 @@ void __fastcall Targ_deb::Timer3Timer(TObject *Sender)
                 Label8->Caption="---";} 
  //Timer3->Enabled=false;               // Стоп
 // }
+}
+//---------------------------------------------------------------------------
+
+bool* cwn2addr4(int addr){
+switch (addr) {
+        case 40: return cw_b1; break;
+        default: JPS(3,is_miu+" ",is_operator.Delete(is_operator.Length(),1),"Ошибка ИРВИ",""); break;
+}
+}
+
+unsigned long boolArrayToBinary2(const bool cw[], size_t size) {
+    unsigned long binary = 0;
+    for (size_t i = 0; i < size; ++i) {
+        binary |= (cw[i] << (size - 1 - i));
+    }
+    return binary;
+}
+
+AnsiString binaryToOctal2(unsigned long binary) {
+    AnsiString octal = "";
+    unsigned long remainder;
+
+    while (binary > 0) {
+        remainder = binary % 8;
+        octal = IntToStr(remainder) + octal;
+        binary /= 8;
+    }
+
+    return octal;
+}
+
+AnsiString boolcwtostring2(const bool cw[], size_t size) {
+    unsigned long binary = boolArrayToBinary2(cw, size);
+    return binaryToOctal2(binary);
+}
+
+void __fastcall Targ_deb::Button3Click(TObject *Sender)
+{
+Label9->Caption = boolcwtostring2(cw_b1,16);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall Targ_deb::Button4Click(TObject *Sender)
+{
+cwn2addr4(40)[4]=1;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall Targ_deb::gso1Click(TObject *Sender)
+{
+if(!cw_a5[2])cw_a5[2]=1; else cw_a5[2]=0;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall Targ_deb::Timer4Timer(TObject *Sender)
+{
+if(cw_a5[2]) gso1_pr->Color=clGreen; else gso1_pr->Color=clBlack;
+if(cw_a5[3]) gso2_pr->Color=clGreen; else gso2_pr->Color=clBlack;
+if(cw_a16[0]) gso3_pr->Color=clGreen; else gso3_pr->Color=clBlack;
+if(cw_a16[2]) gso4_pr->Color=clGreen; else gso4_pr->Color=clBlack;
+if(cw_a5[6]) gso5_pr->Color=clGreen; else gso5_pr->Color=clBlack;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall Targ_deb::Button5Click(TObject *Sender)
+{
+if(!cw_a5[3])cw_a5[3]=1; else cw_a5[3]=0;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall Targ_deb::Button6Click(TObject *Sender)
+{
+if(!cw_a16[0])cw_a16[0]=1; else cw_a16[0]=0;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall Targ_deb::Button7Click(TObject *Sender)
+{
+if(!cw_a16[2])cw_a16[2]=1; else cw_a16[2]=0;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall Targ_deb::Button8Click(TObject *Sender)
+{
+if(!cw_a5[6])cw_a5[6]=1; else cw_a5[6]=0;
 }
 //---------------------------------------------------------------------------
 

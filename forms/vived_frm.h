@@ -19,8 +19,8 @@ class Tliftoff_form : public TForm
 __published:	// IDE-managed Components
         TChart *Chart1;
         TFastLineSeries *Series2;
-        TEdit *Edit1;
-        TEdit *Edit2;
+        TEdit *xp;
+        TEdit *yp;
         TButton *Button1;
         TLabel *Label1;
         TLabel *Label2;

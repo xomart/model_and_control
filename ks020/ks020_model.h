@@ -54,6 +54,14 @@ _r_Bd,
 _r_A_16
 }tmk_R_Packets;
 
+struct{
+unsigned short z1161; // Nmax - максимальная перегрузка - десятые g0 0..999
+unsigned short z1162; // 1-я группа уставок АУС 0..01777 oct
+unsigned short z1163; // 2-я группа уставок АУС 0..01777 oct
+unsigned short z1166; // V.T - импульс СКД на момент аварии СКД в м/с   0..1300
+}TZraz; // Разовый Массив
+
+
 
 
 
